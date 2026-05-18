@@ -9,7 +9,7 @@ interface Props {
 const { text, button_text, deadline, notion_url } = Astro.props;
 ---
 
-<section class="section-padding text-center relative overflow-hidden bg-wedding-bg">
+<section class="section-padding text-center relative overflow-hidden bg-wedding-bg-alt">
   <!-- Subtle top line -->
   <div
     class="absolute top-0 left-0 right-0 h-px"
@@ -45,7 +45,7 @@ const { text, button_text, deadline, notion_url } = Astro.props;
       href={notion_url}
       target="_blank"
       rel="noopener noreferrer"
-      class="liquid-glass-button inline-block font-body text-sm uppercase tracking-[0.2em] px-12 py-4"
+      class="liquid-glass-button inline-block font-body text-sm uppercase tracking-[0.2em] px-8 py-4 md:px-12"
       style="font-weight: 500; transition: transform 0.15s ease, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;"
     >
       {button_text}

@@ -58,6 +58,13 @@
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Prevent long words/URLs breaking layout on mobile */
+  p, h1, h2, h3, span, a {
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }
 

@@ -11,10 +11,24 @@ import RSVPButton from '../components/RSVPButton.astro';
 import data from '../data/wedding-data.json';
 
 const d = data.avond;
+
+const DUTCH_MONTHS: Record<string, number> = {
+  januari:0,februari:1,maart:2,april:3,mei:4,juni:5,
+  juli:6,augustus:7,september:8,oktober:9,november:10,december:11,
+};
+function countdownFrom(program: typeof d.program): string {
+  const day = program.days[0];
+  const parts = day.label.trim().split(' ');
+  const month = DUTCH_MONTHS[parts[2].toLowerCase()] ?? 9;
+  const rawTime = day.items[0].time.split(' - ')[0];
+  const [h, m] = rawTime.split(':').map(Number);
+  return new Date(2026, month, parseInt(parts[1], 10), h, m).toISOString();
+}
+const countdownTarget = countdownFrom(d.program);
 ---
 
 <WeddingLayout title="Sebastiaan & Esmeralda — Avondgasten" variant="avond">
-  <HeroHeader {...d.header} />
+  <HeroHeader {...d.header} countdownTarget={countdownTarget} />
   <LocationBlock {...d.location} />
   <ProgramTimeline days={d.program.days} />
   <Acts {...d.acts} />

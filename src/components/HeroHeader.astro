@@ -4,13 +4,15 @@ interface Props {
   name_2: string;
   date: string;
   subtitle: string;
+  countdownTarget?: string;
 }
 
-const { name_1, name_2, date, subtitle } = Astro.props;
+const { name_1, name_2, date, subtitle, countdownTarget } = Astro.props;
 ---
 
 <section
   data-hero-section
+  data-countdown={countdownTarget}
   class="hero-mirror relative min-h-screen flex items-center justify-center overflow-hidden"
 >
   <!-- Subtle dot texture -->
@@ -29,7 +31,7 @@ const { name_1, name_2, date, subtitle } = Astro.props;
     <!-- Names with breathing glow -->
     <h1
       class="font-display leading-none tracking-tight hero-names-glow"
-      style="font-size: clamp(4rem, 12vw, 10rem); font-weight: 700; letter-spacing: -0.02em; text-shadow: 0 2px 20px rgba(0,0,0,0.5);"
+      style="font-size: clamp(2.8rem, 12vw, 10rem); font-weight: 700; letter-spacing: -0.02em; text-shadow: 0 2px 20px rgba(0,0,0,0.5);"
     >
       <span class="block hero-name-1" style="color: #FFFFFF;">{name_1}</span>
       <span
@@ -74,8 +76,8 @@ const { name_1, name_2, date, subtitle } = Astro.props;
     </p>
   </div>
 
-  <!-- Scroll indicator -->
-  <div class="hero-scroll-indicator absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+  <!-- Scroll indicator — inset-x-0 avoids transform conflict with fadeInScaleUp animation -->
+  <div class="hero-scroll-indicator absolute bottom-10 inset-x-0 flex flex-col items-center gap-2 pointer-events-none">
     <span class="text-[9px] uppercase tracking-[0.4em] font-body" style="color: rgba(255,255,255,0.5);">Scroll</span>
     <div class="w-px h-10 origin-top animate-scrollPulse" style="background: rgba(255,255,255,0.35);"></div>
   </div>
@@ -100,7 +102,8 @@ const { name_1, name_2, date, subtitle } = Astro.props;
 <script>
   // ── Hover Countdown ───────────────────────────────────────────────────
 
-  const WEDDING = new Date('2026-10-31T14:00:00');
+  const targetStr = document.querySelector<HTMLElement>('[data-hero-section]')?.dataset.countdown;
+  const WEDDING = new Date(targetStr || '2026-10-31T14:00:00');
 
   function getCountdown(): string {
     const diff = WEDDING.getTime() - Date.now();

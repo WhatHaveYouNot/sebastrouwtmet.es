@@ -1,0 +1,130 @@
+---
+import '../styles/global.css';
+import data from '../data/wedding-data.json';
+
+const cards = [
+  { label: 'Weekendgasten', date: data.weekend.header.date, href: '/weekend' },
+  { label: 'Daggasten',     date: data.dag.header.date,     href: '/dag'     },
+  { label: 'Avondgasten',   date: data.avond.header.date,   href: '/avond'   },
+];
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Sebastiaan &amp; Esmeralda — 31 oktober 2026</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body class="font-body bg-wedding-bg text-wedding-text">
+
+    <!-- Hero -->
+    <section class="home-hero relative flex items-center justify-center overflow-hidden" style="min-height: 62vh;">
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px); background-size: 40px 40px; opacity: 0.5;"
+      ></div>
+      <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(to right, transparent, rgba(255,255,255,0.35), transparent);"></div>
+
+      <div class="relative z-10 text-center px-6 w-full">
+        <h1
+          class="font-display leading-none tracking-tight"
+          style="font-size: clamp(2.8rem, 12vw, 9rem); font-weight: 700; letter-spacing: -0.02em; text-shadow: 0 2px 20px rgba(0,0,0,0.5);"
+        >
+          <span class="block home-name-1" style="color: #fff;">Sebastiaan</span>
+          <span class="block home-amp" style="color: #fff; font-size: 0.52em; font-weight: 600; line-height: 1.1;">&amp;</span>
+          <span class="block home-name-2" style="color: #fff;">Esmeralda</span>
+        </h1>
+
+        <div class="flex items-center justify-center gap-4 mt-8 mb-5 home-divider">
+          <div class="h-px" style="width: clamp(40px, 7vw, 90px); background: rgba(196,185,152,0.5);"></div>
+          <div class="w-2 h-2 rounded-full flex-shrink-0" style="background: rgba(255,255,255,0.8);"></div>
+          <div class="h-px" style="width: clamp(40px, 7vw, 90px); background: rgba(196,185,152,0.5);"></div>
+        </div>
+
+        <p class="home-date text-xs uppercase tracking-[0.35em] text-wedding-gold font-body" style="font-weight: 400;">
+          31 oktober 2026
+        </p>
+      </div>
+    </section>
+
+    <!-- Guest type selector -->
+    <section class="section-padding" style="background: #6B0018;">
+      <div class="content-width">
+        <p class="text-xs uppercase tracking-[0.3em] font-body mb-3 text-center" style="color: rgba(255,255,255,0.45);">
+          Voor wie is deze uitnodiging?
+        </p>
+        <h2
+          class="font-display text-3xl text-center text-wedding-text mb-12"
+          style="font-weight: 600; letter-spacing: -0.01em;"
+        >
+          Kies jouw dag
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-5">
+          {cards.map((card) => (
+            <a href={card.href} class="guest-card liquid-glass block px-8 py-10 text-center rounded-2xl">
+              <p class="text-xs uppercase tracking-[0.3em] text-wedding-gold font-body mb-3" style="font-weight: 400;">
+                {card.date}
+              </p>
+              <h3 class="font-display text-2xl md:text-3xl text-wedding-text" style="font-weight: 600;">
+                {card.label}
+              </h3>
+              <div class="guest-card-line mt-6 mx-auto h-px" style="width: 2rem; background: rgba(255,255,255,0.3);"></div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10 text-center text-wedding-muted text-sm font-body border-t border-wedding-divider">
+      S &amp; E — 2026
+    </footer>
+  </body>
+</html>
+
+<style>
+  .home-hero {
+    background:
+      url('/images/mirror-hero-bg.png') center center / cover no-repeat,
+      linear-gradient(135deg, #0A0A0A 0%, #4A4A4A 40%, #E0E0E0 50%, #4A4A4A 60%, #1A1A1A 100%);
+  }
+
+  .home-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+  }
+
+  .home-name-1  { animation: clipRevealLeft  0.9s cubic-bezier(0.22,1,0.36,1) 0.2s  both; }
+  .home-amp     { animation: fadeInScaleUp   0.7s cubic-bezier(0.22,1,0.36,1) 0.75s both; }
+  .home-name-2  { animation: clipRevealRight 0.9s cubic-bezier(0.22,1,0.36,1) 0.9s  both; }
+  .home-divider { animation: fadeInScaleUp   0.6s cubic-bezier(0.22,1,0.36,1) 1.7s  both; }
+  .home-date    { animation: fadeInScaleUp   0.6s cubic-bezier(0.22,1,0.36,1) 1.9s  both; }
+
+  .guest-card {
+    transition:
+      transform     0.3s cubic-bezier(0.22,1,0.36,1),
+      box-shadow    0.3s cubic-bezier(0.22,1,0.36,1),
+      border-color  0.3s cubic-bezier(0.22,1,0.36,1);
+  }
+
+  .guest-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+
+  .guest-card:hover .guest-card-line {
+    width: 4rem;
+    transition: width 0.3s cubic-bezier(0.22,1,0.36,1);
+  }
+
+  .guest-card-line {
+    transition: width 0.3s cubic-bezier(0.22,1,0.36,1);
+  }
+</style>
