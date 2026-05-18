@@ -1,0 +1,91 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: FAQItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="section-padding bg-wedding-bg">
+  <div class="content-width">
+    <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
+      Vragen
+    </p>
+    <h2
+      data-reveal
+      data-letter-reveal
+      data-reveal-delay="1"
+      class="font-display text-4xl text-wedding-text mb-12"
+      style="font-weight: 600;"
+    >
+      Veelgestelde vragen
+    </h2>
+
+    <div class="liquid-glass overflow-hidden">
+      <div class="divide-y divide-wedding-divider">
+        {
+          items.map((item, i) => {
+            const delay = String(Math.min(i + 1, 5));
+            return (
+              <div data-reveal data-reveal-delay={delay} class="faq-item px-6 py-5 md:px-8 md:py-6">
+                <button
+                  class="faq-trigger w-full flex items-center justify-between gap-6 text-left group"
+                  aria-expanded="false"
+                >
+                  <span class="font-body text-wedding-text text-base md:text-lg leading-snug" style="font-weight: 400;">
+                    {item.question}
+                  </span>
+                  <span class="faq-icon shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-wedding-muted transition-transform duration-300" style="border: 1px solid rgba(255,255,255,0.2);">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="M6 2v8M2 6h8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out">
+                  <p class="pt-4 pb-2 text-wedding-muted leading-relaxed" style="font-weight: 300;">{item.answer}</p>
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const trigger = item.querySelector<HTMLButtonElement>('.faq-trigger');
+    const panel = item.querySelector<HTMLElement>('.faq-panel');
+    const icon = item.querySelector<HTMLElement>('.faq-icon');
+
+    trigger?.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      document.querySelectorAll('.faq-item').forEach((other) => {
+        const t = other.querySelector<HTMLButtonElement>('.faq-trigger');
+        const p = other.querySelector<HTMLElement>('.faq-panel');
+        const ic = other.querySelector<HTMLElement>('.faq-icon');
+        t?.setAttribute('aria-expanded', 'false');
+        if (p) p.style.maxHeight = '0';
+        if (ic) ic.style.transform = 'rotate(0deg)';
+      });
+
+      if (!isOpen && panel && icon) {
+        trigger.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        icon.style.transform = 'rotate(45deg)';
+      }
+    });
+  });
+</script>

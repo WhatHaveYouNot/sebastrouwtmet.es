@@ -1,0 +1,25 @@
+---
+import WeddingLayout from '../layouts/WeddingLayout.astro';
+import HeroHeader from '../components/HeroHeader.astro';
+import LocationBlock from '../components/LocationBlock.astro';
+import ProgramTimeline from '../components/ProgramTimeline.astro';
+import Acts from '../components/Acts.astro';
+import GiftTip from '../components/GiftTip.astro';
+import FAQ from '../components/FAQ.astro';
+import CeremonyMaster from '../components/CeremonyMaster.astro';
+import RSVPButton from '../components/RSVPButton.astro';
+import data from '../data/wedding-data.json';
+
+const d = data.dag;
+---
+
+<WeddingLayout title="Sebastiaan & Esmeralda — Daggasten" variant="dag">
+  <HeroHeader {...d.header} />
+  <LocationBlock {...d.location} />
+  <ProgramTimeline days={d.program.days} />
+  <Acts {...d.acts} />
+  <GiftTip {...d.gift} />
+  <FAQ items={d.faq.items} />
+  <CeremonyMaster {...d.mc} />
+  <RSVPButton {...d.rsvp} />
+</WeddingLayout>

@@ -1,0 +1,152 @@
+---
+interface Props {
+  name_1: string;
+  name_2: string;
+  date: string;
+  subtitle: string;
+}
+
+const { name_1, name_2, date, subtitle } = Astro.props;
+---
+
+<section
+  data-hero-section
+  class="hero-mirror relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  <!-- Subtle dot texture -->
+  <div
+    class="absolute inset-0 pointer-events-none"
+    style="background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px); background-size: 40px 40px; opacity: 0.5;"
+  ></div>
+
+  <!-- Metallic sheen line at top -->
+  <div
+    class="absolute top-0 left-0 right-0 h-px"
+    style="background: linear-gradient(to right, transparent, rgba(255,255,255,0.35), transparent);"
+  ></div>
+
+  <div data-hero-content class="relative z-10 text-center px-6 max-w-5xl mx-auto w-full">
+    <!-- Names with breathing glow -->
+    <h1
+      class="font-display leading-none tracking-tight hero-names-glow"
+      style="font-size: clamp(4rem, 12vw, 10rem); font-weight: 700; letter-spacing: -0.02em; text-shadow: 0 2px 20px rgba(0,0,0,0.5);"
+    >
+      <span class="block hero-name-1" style="color: #FFFFFF;">{name_1}</span>
+      <span
+        class="block hero-ampersand"
+        style="color: #FFFFFF; font-size: 0.52em; font-weight: 600; line-height: 1.1;"
+      >
+        &amp;
+      </span>
+      <span class="block hero-name-2" style="color: #FFFFFF;">{name_2}</span>
+    </h1>
+
+    <!-- Decorative divider -->
+    <div class="hero-divider flex items-center justify-center gap-4 mt-10 mb-8">
+      <div class="h-px" style="width: clamp(40px, 7vw, 90px); background: rgba(196,185,152,0.5);"></div>
+      <div class="w-2 h-2 rounded-full flex-shrink-0" style="background: rgba(255,255,255,0.8);"></div>
+      <div class="h-px" style="width: clamp(40px, 7vw, 90px); background: rgba(196,185,152,0.5);"></div>
+    </div>
+
+    <!-- Date — desktop hover switches to countdown -->
+    <p
+      id="hero-date-text"
+      class="hero-date text-xs uppercase tracking-[0.35em] text-wedding-gold font-body mb-2"
+      style="font-weight: 400; cursor: default;"
+    >
+      {date}
+    </p>
+
+    <!-- Mobile countdown (always visible, hidden on md+) -->
+    <p
+      id="hero-countdown-mobile"
+      class="hero-date md:hidden text-[11px] font-body mb-5"
+      style="font-weight: 300; color: rgba(255,255,255,0.55);"
+    ></p>
+    <!-- Desktop spacer when no mobile countdown -->
+    <div class="hidden md:block mb-5"></div>
+
+    <p
+      class="hero-subtitle font-body text-sm leading-relaxed max-w-sm mx-auto"
+      style="font-weight: 300; color: rgba(255,255,255,0.7);"
+    >
+      {subtitle}
+    </p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero-scroll-indicator absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+    <span class="text-[9px] uppercase tracking-[0.4em] font-body" style="color: rgba(255,255,255,0.5);">Scroll</span>
+    <div class="w-px h-10 origin-top animate-scrollPulse" style="background: rgba(255,255,255,0.35);"></div>
+  </div>
+</section>
+
+<style>
+  .hero-mirror {
+    background:
+      url('/images/mirror-hero-bg.png') center center / cover no-repeat,
+      linear-gradient(135deg, #0A0A0A 0%, #4A4A4A 40%, #E0E0E0 50%, #4A4A4A 60%, #1A1A1A 100%);
+  }
+
+  .hero-mirror::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  // ── Hover Countdown ───────────────────────────────────────────────────
+
+  const WEDDING = new Date('2026-10-31T14:00:00');
+
+  function getCountdown(): string {
+    const diff = WEDDING.getTime() - Date.now();
+    if (diff <= 0) return 'De grote dag is hier!';
+    const days  = Math.floor(diff / 86_400_000);
+    const hours = Math.floor((diff % 86_400_000) / 3_600_000);
+    const mins  = Math.floor((diff % 3_600_000) / 60_000);
+    return `nog ${days} dagen, ${hours} uur en ${mins} minuten`;
+  }
+
+  const dateEl           = document.getElementById('hero-date-text');
+  const mobileCountdown  = document.getElementById('hero-countdown-mobile');
+
+  // Mobile: permanent countdown under the date
+  if (mobileCountdown) {
+    const updateMobile = () => { mobileCountdown.textContent = getCountdown(); };
+    updateMobile();
+    setInterval(updateMobile, 60_000);
+  }
+
+  // Desktop: hover morphs date text to countdown
+  const isTouch = window.matchMedia('(hover: none)').matches;
+  if (dateEl && !isTouch) {
+    const originalText = dateEl.textContent ?? '';
+    dateEl.style.transition = 'opacity 0.2s ease';
+
+    let hoverTimer: ReturnType<typeof setInterval> | null = null;
+
+    dateEl.addEventListener('mouseenter', () => {
+      dateEl.style.opacity = '0';
+      setTimeout(() => {
+        dateEl.textContent = getCountdown();
+        dateEl.style.opacity = '1';
+      }, 200);
+      hoverTimer = setInterval(() => {
+        dateEl.textContent = getCountdown();
+      }, 60_000);
+    });
+
+    dateEl.addEventListener('mouseleave', () => {
+      if (hoverTimer) clearInterval(hoverTimer);
+      dateEl.style.opacity = '0';
+      setTimeout(() => {
+        dateEl.textContent = originalText;
+        dateEl.style.opacity = '1';
+      }, 200);
+    });
+  }
+</script>

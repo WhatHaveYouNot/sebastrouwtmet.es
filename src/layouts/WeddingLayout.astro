@@ -1,0 +1,279 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  variant: 'weekend' | 'dag' | 'avond';
+}
+
+const { title, variant } = Astro.props;
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body data-variant={variant} class="font-body bg-wedding-bg text-wedding-text">
+    <slot />
+
+    <footer class="py-10 text-center text-wedding-muted text-sm font-body border-t border-wedding-divider">
+      S &amp; E — 2026
+    </footer>
+
+    <!-- Rolling flower scroll indicator -->
+    <div
+      id="flower-roller"
+      style="position:fixed; right:24px; top:50%; transform:translateY(-50%); z-index:50; width:48px; height:48px; border-radius:9999px; background:rgba(255,255,255,0.12); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0.4; transition:opacity 0.3s ease; display:none;"
+    >
+      <img
+        id="flower-img"
+        src="/images/flower-logo.png"
+        alt=""
+        aria-hidden="true"
+        style="width:28px; height:28px; object-fit:contain; transform-origin:center; will-change:transform;"
+      />
+    </div>
+
+    <!-- Easter egg message -->
+    <div
+      id="egg-message"
+      style="position:fixed; inset:0; z-index:200; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none; opacity:0; transition:opacity 0.4s ease;"
+    >
+      <div style="background:rgba(0,0,0,0.6); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(255,255,255,0.2); border-radius:20px; padding:28px 40px; text-align:center; color:#fff; font-family:inherit;">
+        <p style="font-size:1.1rem; font-weight:500; letter-spacing:0.05em;">Jullie hebben ons geheim gevonden! 🤫</p>
+      </div>
+    </div>
+
+    <script>
+      // Scroll reveals (scale + translateY)
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      );
+
+      document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+
+      // Letter-by-letter animation for section headings
+      function splitLetters(el: Element) {
+        const text = el.textContent ?? '';
+        el.innerHTML = '';
+        [...text].forEach((char, i) => {
+          const span = document.createElement('span');
+          span.textContent = char === ' ' ? '\u00A0' : char;
+          span.className = 'letter-span';
+          span.style.transitionDelay = `${i * 0.032}s`;
+          el.appendChild(span);
+        });
+      }
+
+      const letterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.querySelectorAll('.letter-span').forEach((span) => {
+                span.classList.add('visible');
+              });
+              letterObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.3, rootMargin: '0px 0px -40px 0px' }
+      );
+
+      document.querySelectorAll('[data-letter-reveal]').forEach((el) => {
+        splitLetters(el);
+        letterObserver.observe(el);
+      });
+
+      // Hero parallax
+      const heroContent = document.querySelector<HTMLElement>('[data-hero-content]');
+      if (heroContent) {
+        window.addEventListener(
+          'scroll',
+          () => {
+            const scrollY = window.scrollY;
+            const vh = window.innerHeight;
+            const progress = Math.min(scrollY / vh, 1);
+            heroContent.style.transform = `translateY(${scrollY * 0.3}px)`;
+            heroContent.style.opacity = String(Math.max(1 - progress * 1.6, 0));
+          },
+          { passive: true }
+        );
+      }
+
+      // Horizontal scroll timeline (weekend page)
+      const hSection = document.querySelector<HTMLElement>('[data-h-scroll]');
+      const hTrack = document.querySelector<HTMLElement>('[data-h-track]');
+
+      if (hSection && hTrack) {
+        const cards = Array.from(document.querySelectorAll('[data-day-card]'));
+
+        function initHScroll() {
+          if (window.innerWidth < 768) {
+            hSection.style.height = '';
+            hTrack.style.transform = '';
+            return;
+          }
+
+          const trackWidth = hTrack.scrollWidth;
+          const viewportWidth = window.innerWidth;
+          const padding = 192; // px-24 * 2
+          const maxShift = Math.max(0, trackWidth - viewportWidth + padding);
+
+          hSection.style.height = `calc(100vh + ${maxShift}px)`;
+
+          function onScroll() {
+            if (window.innerWidth < 768) return;
+            const sectionTop = hSection!.getBoundingClientRect().top + window.scrollY;
+            const scrollInSection = window.scrollY - sectionTop;
+            const scrollMax = hSection!.offsetHeight - window.innerHeight;
+            const progress = Math.max(0, Math.min(1, scrollInSection / scrollMax));
+
+            hTrack!.style.transform = `translateX(${-progress * maxShift}px)`;
+
+            const activeIndex = Math.round(progress * (cards.length - 1));
+            cards.forEach((card, i) => {
+              card.classList.toggle('h-card-active', i === activeIndex);
+            });
+          }
+
+          window.addEventListener('scroll', onScroll, { passive: true });
+          onScroll();
+        }
+
+        initHScroll();
+
+        let resizeTimer: ReturnType<typeof setTimeout>;
+        window.addEventListener('resize', () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(initHScroll, 150);
+        });
+      }
+
+      // ── Rolling Flower ───────────────────────────────────────────────────
+      const flowerRoller = document.getElementById('flower-roller') as HTMLElement | null;
+      const flowerImg    = document.getElementById('flower-img')    as HTMLImageElement | null;
+
+      if (flowerRoller && flowerImg) {
+        // Only show on md+ (≥768px)
+        function updateFlowerVisibility() {
+          flowerRoller!.style.display = window.innerWidth >= 768 ? 'flex' : 'none';
+        }
+        updateFlowerVisibility();
+        window.addEventListener('resize', updateFlowerVisibility, { passive: true });
+
+        flowerRoller.addEventListener('mouseenter', () => { flowerRoller!.style.opacity = '0.75'; });
+        flowerRoller.addEventListener('mouseleave', () => { flowerRoller!.style.opacity = '0.4'; });
+
+        // Scroll: vertical position 10vh→85vh, rotation 0→720deg
+        let flowerRotation = 0;
+        window.addEventListener('scroll', () => {
+          if (window.innerWidth < 768) return;
+          const scrollMax = document.body.scrollHeight - window.innerHeight;
+          const progress  = scrollMax > 0 ? Math.min(window.scrollY / scrollMax, 1) : 0;
+          const topVh = 10 + progress * 75; // 10vh → 85vh
+          flowerRotation = progress * 720;
+          flowerRoller!.style.top = `${topVh}vh`;
+          flowerRoller!.style.transform = 'translateY(-50%)';
+          flowerImg!.style.transform = `rotate(${flowerRotation.toFixed(1)}deg)`;
+        }, { passive: true });
+
+        // Click → scroll to top
+        let eggActive = false;
+        flowerRoller.addEventListener('click', () => {
+          if (!eggActive) window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ── Easter Egg: triple-tap within 1 second ────────────────────────
+        let tapTimes: number[] = [];
+
+        flowerRoller.addEventListener('click', () => {
+          const now = Date.now();
+          tapTimes.push(now);
+          tapTimes = tapTimes.filter(t => now - t <= 1000);
+
+          if (tapTimes.length >= 3 && !eggActive) {
+            tapTimes = [];
+            triggerEasterEgg();
+          }
+        });
+
+        function spawnConfetti() {
+          const colors = ['#FFFFFF', '#C4B998', '#8B0020', '#A8213F'];
+          for (let i = 0; i < 28; i++) {
+            const el = document.createElement('div');
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const size  = 6 + Math.random() * 8;
+            const drift = (Math.random() - 0.5) * 200;
+            el.style.cssText = [
+              'position:fixed',
+              `left:${Math.random() * 100}vw`,
+              'top:-10px',
+              `width:${size.toFixed(1)}px`,
+              `height:${size.toFixed(1)}px`,
+              `background:${color}`,
+              `border-radius:${Math.random() > 0.5 ? '50%' : '2px'}`,
+              `--confetti-drift:${drift.toFixed(0)}px`,
+              'animation:confettiFall 2.8s ease-in forwards',
+              `animation-delay:${(Math.random() * 0.4).toFixed(2)}s`,
+              'z-index:300',
+              'pointer-events:none',
+            ].join(';');
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 3500);
+          }
+        }
+
+        function triggerEasterEgg() {
+          eggActive = true;
+
+          // Move flower to center
+          const rect = flowerRoller!.getBoundingClientRect();
+          const centerX = window.innerWidth  / 2 - rect.left - rect.width  / 2;
+          const centerY = window.innerHeight / 2 - rect.top  - rect.height / 2;
+          flowerRoller!.style.transition = 'transform 0.5s cubic-bezier(0.22,1,0.36,1), top 0.5s cubic-bezier(0.22,1,0.36,1), opacity 0.3s ease';
+          flowerRoller!.style.transform  = `translate(${centerX.toFixed(0)}px, ${centerY.toFixed(0)}px) scale(2.2)`;
+          flowerImg!.style.transition    = 'transform 0.6s ease';
+          flowerImg!.style.transform     = `rotate(${(flowerRotation + 360).toFixed(0)}deg)`;
+
+          spawnConfetti();
+
+          // Show message
+          const msgEl = document.getElementById('egg-message') as HTMLElement | null;
+          if (msgEl) {
+            msgEl.style.opacity = '1';
+            msgEl.style.pointerEvents = 'auto';
+          }
+
+          // Reset after 3 seconds
+          setTimeout(() => {
+            flowerRoller!.style.transition = 'transform 0.4s ease, top 0.4s ease, opacity 0.3s ease';
+            flowerRoller!.style.transform  = 'translateY(-50%) scale(1)';
+            flowerImg!.style.transform     = `rotate(${flowerRotation.toFixed(0)}deg)`;
+            if (msgEl) {
+              msgEl.style.opacity = '0';
+              msgEl.style.pointerEvents = 'none';
+            }
+            setTimeout(() => {
+              flowerRoller!.style.transition = '';
+              flowerImg!.style.transition    = '';
+              eggActive = false;
+            }, 400);
+          }, 3000);
+        }
+      }
+    </script>
+  </body>
+</html>

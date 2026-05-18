@@ -1,0 +1,85 @@
+section,key,weekend,dag,avond
+header,name_1,Sebastiaan,Sebastiaan,Sebastiaan
+header,name_2,Esmeralda,Esmeralda,Esmeralda
+header,date,30 oktober — 1 november 2026,31 oktober 2026,31 oktober 2026
+header,subtitle,,,
+location,venue_name,Landgoed Twistvliet,Landgoed Twistvliet,Landgoed Twistvliet
+location,address,"Koningin Emmaweg 4, 4354 KC Vrouwenpolder","Koningin Emmaweg 4, 4354 KC Vrouwenpolder","Koningin Emmaweg 4, 4354 KC Vrouwenpolder"
+location,region,Zeeland,Zeeland,Zeeland
+location,arrival_label,Aankomst vrijdag vanaf 17:00,Aankomst vanaf 12:00,Aankomst vanaf 20:30
+location,arrival_note,Check-in vrijdagmiddag vanaf 17:00. Om 18:00 begint het diner.,"Om 12:30 wordt de lunch geserveerd, de ceremonie begint om 14:00.","Het feest begint om 21:00, zorg dat je er dan uiterlijk bent. Wil je 's middags ook bij de ceremonie zijn? Dat zouden we heel leuk vinden! Geef dit even aan in de RSVP."
+location,maps_query,Landgoed+Twistvliet+Vrouwenpolder+Zeeland,Landgoed+Twistvliet+Vrouwenpolder+Zeeland,Landgoed+Twistvliet+Vrouwenpolder+Zeeland
+program,day_1_label,Vrijdag 30 oktober,Zaterdag 31 oktober,Zaterdag 31 oktober
+program,day_1_1_time,17:00,12:30,14:00
+program,day_1_1_title,Aankomst & check-in,Lunch,Ceremonie
+program,day_1_1_detail,Zet je koffer in de landhuis of cottage en maak je klaar voor de eerste avond,We lunchen samen met elkaar in de kasteelzaal,Wil je 's middags ook bij de ceremonie zijn? Dat zouden we heel leuk vinden! Geef dit even aan in de RSVP.
+program,day_1_2_time,18:00,14:00,20:30
+program,day_1_2_title,Welkomstborrel,Ceremonie,Feest
+program,day_1_2_detail,Opening van ons trouwweekend in de kasteelzaal,Officiele gedeelte,Handjes in de lucht
+program,day_1_3_time,18:30,15:00,01:00
+program,day_1_3_title,Diner,Borrel & Receptie,Einde feest
+program,day_1_3_detail,Festival-stijl diner in de orangerie,Proost samen met ons op ons huwelijk,Tot sinas
+program,day_1_4_time,20:30,17:30,
+program,day_1_4_title,Borrel en Gezelligheid,Diner,
+program,day_1_4_detail,En misschien tijd voor wat gekkigheid?,Driegangen diner in de orangerie,
+program,day_1_5_time,22:00,20:30,
+program,day_1_5_title,Einde van de eerste dag,Feest,
+program,day_1_5_detail,,Handjes in de lucht,
+program,day_1_6_time,,01:00,
+program,day_1_6_title,,Einde feest,
+program,day_1_6_detail,,Tot sinas,
+program,day_2_label,Zaterdag 31 oktober,,
+program,day_2_1_time,08:00 - 10:00,,
+program,day_2_1_title,Ontbijt,,
+program,day_2_1_detail,"Het ontbijt staat klaar vanaf 08:00 uur in de ontbijtzaal. Ontbijt wanneer je wil, en geniet van een vrije ochtend.",,
+program,day_2_2_time,11:45,,
+program,day_2_2_title,First Look,,
+program,day_2_2_detail,Zorg dat je uiterlijk om 11:45 helemaal chique-de-friemel bent,,
+program,day_2_3_time,12:30,,
+program,day_2_3_title,Lunch,,
+program,day_2_3_detail,We lunchen samen met de daggasten in de kasteelzaal,,
+program,day_2_4_time,14:00,,
+program,day_2_4_title,Ceremonie,,
+program,day_2_4_detail,Officiele gedeelte,,
+program,day_2_5_time,15:00,,
+program,day_2_5_title,Borrel & Receptie,,
+program,day_2_5_detail,Proost samen met ons op ons huwelijk,,
+program,day_2_6_time,17:30,,
+program,day_2_6_title,Diner,,
+program,day_2_6_detail,Driegangen diner in de orangerie,,
+program,day_2_7_time,20:30,,
+program,day_2_7_title,Feest,,
+program,day_2_7_detail,Handjes in de lucht,,
+program,day_2_8_time,01:00,,
+program,day_2_8_title,Einde feest,,
+program,day_2_8_detail,Tot sinas,,
+program,day_3_label,Zondag 1 november,,
+program,day_3_1_time,08:30,,
+program,day_3_1_title,Ontbijt,,
+program,day_3_1_detail,Geniet van een laatste gemeenschappelijk ontbijt.,,
+program,day_3_2_time,10:00,,
+program,day_3_2_title,Afscheid,,
+program,day_3_2_detail,"Check-out, groepsafscheid en goede wensen voor de reis.",,
+acts,title,Wil je bijdragen aan de feestvreugde?,Wil je bijdragen aan de feestvreugde?,Wil je bijdragen aan de feestvreugde?
+acts,text,"Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.","Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.","Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is."
+acts,email,email@email.com,email@email.com,email@email.com
+gift,title,Een bijdrage aan onze wijncursus,Een bijdrage aan onze wijncursus,Een bijdrage aan onze wijncursus
+gift,text,Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen. De bijdrage kunnen jullie in de cadeaubox bij de ingang achterlaten.,Samen zuipen tot we kruipen. Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen.,Samen zuipen tot we kruipen. Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen.
+faq,1_q,Wat is de dresscode?,Wat is de dresscode?,Wat is de dresscode?
+faq,1_a,"Vrijdag: niet-zo-chique-de-friemel, zaterdag: chique-de-friemel",Chique de friemel,Chique de friemel
+faq,2_q,Hoe gaat het met dieetwensen?,Zijn kinderen welkom?,Zijn kinderen welkom?
+faq,2_a,"Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven.","Kinderen zijn welkom, maar houd er rekening mee dat het een volledig feestprogramma is zonder specifiek kinderprogramma.",Dit feest is voor volwassenen. We hopen op jullie begrip — en op een avond vol dans en plezier!
+faq,3_q,Hoe zit het met parkeren?,Hoe gaat het met dieetwensen?,Hoe gaat het met dieetwensen?
+faq,3_a,Er is gratis parkeren op het terrein van het landgoed. Vanaf de dijk rijd je meteen de parkeerplaats op. Volg hierna de borden voor onze bruiloft.,"Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven.","Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven."
+faq,4_q,Hoe heet de moeder van Niki Lauda?,Hoe zit het met parkeren?,Hoe zit het met parkeren?
+faq,4_a,Mama Lauda!,Er is gratis parkeren op het terrein. Rijd via de hoofdingang en volg de borden 'Gasten parking'.,Er is gratis parkeren op het terrein. Rijd via de hoofdingang en volg de borden 'Gasten parking'.
+faq,5_q,Moet ik zelf voor beddengoed & handdoeken zorgen?,,
+faq,5_a,"Beddengoed en handdoeken liggen in het huisje, dus dit hoef je niet van thuis mee te nemen.",,
+mc,name,Priscilla Been,Priscilla Been,Priscilla Been
+mc,role,Ceremoniemeester,Ceremoniemeester,Ceremoniemeester
+mc,text,"Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.",Priscilla begeleidt de dag en houdt het programma op de rails. Ze neemt het woord op de juiste momenten en zorgt dat jij zorgeloos kunt genieten.,Priscilla begeleidt de avond en zorgt ervoor dat alles op rolletjes loopt. Heb je vragen over het programma? Priscilla helpt je verder.
+mc,email,priscilla@example.com,priscilla@example.com,priscilla@example.com
+rsvp,text,"Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor het weekend. Aanmelden kan via de knop hieronder.","Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de dag. Aanmelden kan via de knop hieronder.","Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de avond. Aanmelden kan via de knop hieronder."
+rsvp,button_text,Aanmelden,Aanmelden,Aanmelden
+rsvp,deadline,1 augustus 2026,1 augustus 2026,1 augustus 2026
+rsvp,notion_url,https://tally.so/r/1ANDZW,https://tally.so/r/Y5JJ4z,https://tally.so/r/D4xx7X

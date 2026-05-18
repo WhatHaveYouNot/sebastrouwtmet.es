@@ -1,0 +1,69 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  text: string;
+  email: string;
+}
+
+const { name, role, text, email } = Astro.props;
+---
+
+<section class="section-padding" style="background: #6B0018;">
+  <div class="content-width">
+    <div class="liquid-glass grid md:grid-cols-2 gap-12 md:gap-16 items-center p-8 md:p-12">
+      <!-- Photo -->
+      <div class="flex justify-center md:justify-start">
+        <div class="relative w-[160px] h-[160px] md:w-[200px] md:h-[200px]">
+          <img
+            src="/images/Priscilla.jpeg"
+            alt={name}
+            class="w-full h-full rounded-full object-cover"
+            style="border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 8px 32px rgba(0,0,0,0.3);"
+          />
+          <div
+            class="absolute inset-0 rounded-full pointer-events-none"
+            style="border: 1px solid rgba(255,255,255,0.2); transform: scale(1.1);"
+          ></div>
+          <div
+            class="absolute inset-0 rounded-full pointer-events-none"
+            style="border: 1px solid rgba(255,255,255,0.08); transform: scale(1.22);"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-3">
+          {role}
+        </p>
+        <h2
+          data-reveal
+          data-letter-reveal
+          data-reveal-delay="1"
+          class="font-display text-4xl text-wedding-text mb-5"
+          style="font-weight: 600;"
+        >
+          {name}
+        </h2>
+        <p
+          data-reveal
+          data-reveal-delay="2"
+          class="text-wedding-muted leading-relaxed mb-6"
+          style="font-weight: 300;"
+        >
+          {text}
+        </p>
+        <a
+          data-reveal
+          data-reveal-delay="3"
+          href={`mailto:${email}`}
+          class="text-wedding-gold hover:text-wedding-gold-light transition-colors font-body text-sm underline underline-offset-4"
+          style="font-weight: 400;"
+        >
+          {email}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

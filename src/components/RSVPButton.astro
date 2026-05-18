@@ -1,0 +1,86 @@
+---
+interface Props {
+  text: string;
+  button_text: string;
+  deadline: string;
+  notion_url: string;
+}
+
+const { text, button_text, deadline, notion_url } = Astro.props;
+---
+
+<section class="section-padding text-center relative overflow-hidden bg-wedding-bg">
+  <!-- Subtle top line -->
+  <div
+    class="absolute top-0 left-0 right-0 h-px"
+    style="background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);"
+  ></div>
+
+  <div class="content-width relative">
+    <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
+      RSVP
+    </p>
+    <h2
+      data-reveal
+      data-letter-reveal
+      data-reveal-delay="1"
+      class="font-display text-4xl text-wedding-text mb-6"
+      style="font-weight: 600;"
+    >
+      Laat het ons weten
+    </h2>
+    <p
+      data-reveal
+      data-reveal-delay="2"
+      class="text-wedding-muted max-w-sm mx-auto leading-relaxed mb-10"
+      style="font-weight: 300;"
+    >
+      {text}
+    </p>
+
+    <a
+      id="rsvp-btn"
+      data-reveal
+      data-reveal-delay="3"
+      href={notion_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="liquid-glass-button inline-block font-body text-sm uppercase tracking-[0.2em] px-12 py-4"
+      style="font-weight: 500; transition: transform 0.15s ease, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;"
+    >
+      {button_text}
+    </a>
+
+    <p data-reveal data-reveal-delay="4" class="mt-6 text-wedding-muted text-sm" style="font-weight: 300;">
+      Aanmelden vóór {deadline}
+    </p>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('rsvp-btn');
+  const isTouch = window.matchMedia('(hover: none)').matches;
+
+  if (btn && !isTouch) {
+    const RADIUS = 150;
+    const MAX_SHIFT = 8;
+
+    window.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = e.clientX - cx;
+      const dy = e.clientY - cy;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      if (dist < RADIUS) {
+        const strength = (1 - dist / RADIUS);
+        const x = (dx / dist) * strength * MAX_SHIFT;
+        const y = (dy / dist) * strength * MAX_SHIFT;
+        btn.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+      } else {
+        btn.style.transform = '';
+      }
+    }, { passive: true });
+  }
+</script>

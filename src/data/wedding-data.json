@@ -1,0 +1,334 @@
+{
+  "weekend": {
+    "header": {
+      "name_1": "Sebastiaan",
+      "name_2": "Esmeralda",
+      "date": "30 oktober — 1 november 2026",
+      "subtitle": ""
+    },
+    "location": {
+      "venue_name": "Landgoed Twistvliet",
+      "address": "Koningin Emmaweg 4, 4354 KC Vrouwenpolder",
+      "region": "Zeeland",
+      "arrival_label": "Aankomst vrijdag vanaf 17:00",
+      "arrival_note": "Check-in vrijdagmiddag vanaf 17:00. Om 18:00 begint het diner.",
+      "maps_query": "Landgoed+Twistvliet+Vrouwenpolder+Zeeland"
+    },
+    "program": {
+      "days": [
+        {
+          "label": "Vrijdag 30 oktober",
+          "items": [
+            {
+              "time": "17:00",
+              "title": "Aankomst & check-in",
+              "detail": "Zet je koffer in de landhuis of cottage en maak je klaar voor de eerste avond"
+            },
+            {
+              "time": "18:00",
+              "title": "Welkomstborrel",
+              "detail": "Opening van ons trouwweekend in de kasteelzaal"
+            },
+            {
+              "time": "18:30",
+              "title": "Diner",
+              "detail": "Festival-stijl diner in de orangerie"
+            },
+            {
+              "time": "20:30",
+              "title": "Borrel en Gezelligheid",
+              "detail": "En misschien tijd voor wat gekkigheid?"
+            },
+            {
+              "time": "22:00",
+              "title": "Einde van de eerste dag",
+              "detail": ""
+            }
+          ]
+        },
+        {
+          "label": "Zaterdag 31 oktober",
+          "items": [
+            {
+              "time": "08:00 - 10:00",
+              "title": "Ontbijt",
+              "detail": "Het ontbijt staat klaar vanaf 08:00 uur in de ontbijtzaal. Ontbijt wanneer je wil, en geniet van een vrije ochtend."
+            },
+            {
+              "time": "11:45",
+              "title": "First Look",
+              "detail": "Zorg dat je uiterlijk om 11:45 helemaal chique-de-friemel bent"
+            },
+            {
+              "time": "12:30",
+              "title": "Lunch",
+              "detail": "We lunchen samen met de daggasten in de kasteelzaal"
+            },
+            {
+              "time": "14:00",
+              "title": "Ceremonie",
+              "detail": "Officiele gedeelte"
+            },
+            {
+              "time": "15:00",
+              "title": "Borrel & Receptie",
+              "detail": "Proost samen met ons op ons huwelijk"
+            },
+            {
+              "time": "17:30",
+              "title": "Diner",
+              "detail": "Driegangen diner in de orangerie"
+            },
+            {
+              "time": "20:30",
+              "title": "Feest",
+              "detail": "Handjes in de lucht"
+            },
+            {
+              "time": "01:00",
+              "title": "Einde feest",
+              "detail": "Tot sinas"
+            }
+          ]
+        },
+        {
+          "label": "Zondag 1 november",
+          "items": [
+            {
+              "time": "08:30",
+              "title": "Ontbijt",
+              "detail": "Geniet van een laatste gemeenschappelijk ontbijt."
+            },
+            {
+              "time": "10:00",
+              "title": "Afscheid",
+              "detail": "Check-out, groepsafscheid en goede wensen voor de reis."
+            }
+          ]
+        }
+      ]
+    },
+    "acts": {
+      "title": "Wil je bijdragen aan de feestvreugde?",
+      "text": "Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.",
+      "email": "email@email.com"
+    },
+    "gift": {
+      "title": "Een bijdrage aan onze wijncursus",
+      "text": "Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen. De bijdrage kunnen jullie in de cadeaubox bij de ingang achterlaten."
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Wat is de dresscode?",
+          "answer": "Vrijdag: niet-zo-chique-de-friemel, zaterdag: chique-de-friemel"
+        },
+        {
+          "question": "Hoe gaat het met dieetwensen?",
+          "answer": "Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven."
+        },
+        {
+          "question": "Hoe zit het met parkeren?",
+          "answer": "Er is gratis parkeren op het terrein van het landgoed. Vanaf de dijk rijd je meteen de parkeerplaats op. Volg hierna de borden voor onze bruiloft."
+        },
+        {
+          "question": "Hoe heet de moeder van Niki Lauda?",
+          "answer": "Mama Lauda!"
+        },
+        {
+          "question": "Moet ik zelf voor beddengoed & handdoeken zorgen?",
+          "answer": "Beddengoed en handdoeken liggen in het huisje, dus dit hoef je niet van thuis mee te nemen."
+        }
+      ]
+    },
+    "mc": {
+      "name": "Priscilla Been",
+      "role": "Ceremoniemeester",
+      "text": "Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.",
+      "email": "priscilla@example.com"
+    },
+    "rsvp": {
+      "text": "Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor het weekend. Aanmelden kan via de knop hieronder.",
+      "button_text": "Aanmelden",
+      "deadline": "1 augustus 2026",
+      "notion_url": "https://tally.so/r/1ANDZW"
+    }
+  },
+  "dag": {
+    "header": {
+      "name_1": "Sebastiaan",
+      "name_2": "Esmeralda",
+      "date": "31 oktober 2026",
+      "subtitle": ""
+    },
+    "location": {
+      "venue_name": "Landgoed Twistvliet",
+      "address": "Koningin Emmaweg 4, 4354 KC Vrouwenpolder",
+      "region": "Zeeland",
+      "arrival_label": "Aankomst vanaf 12:00",
+      "arrival_note": "Om 12:30 wordt de lunch geserveerd, de ceremonie begint om 14:00.",
+      "maps_query": "Landgoed+Twistvliet+Vrouwenpolder+Zeeland"
+    },
+    "program": {
+      "days": [
+        {
+          "label": "Zaterdag 31 oktober",
+          "items": [
+            {
+              "time": "12:30",
+              "title": "Lunch",
+              "detail": "We lunchen samen met elkaar in de kasteelzaal"
+            },
+            {
+              "time": "14:00",
+              "title": "Ceremonie",
+              "detail": "Officiele gedeelte"
+            },
+            {
+              "time": "15:00",
+              "title": "Borrel & Receptie",
+              "detail": "Proost samen met ons op ons huwelijk"
+            },
+            {
+              "time": "17:30",
+              "title": "Diner",
+              "detail": "Driegangen diner in de orangerie"
+            },
+            {
+              "time": "20:30",
+              "title": "Feest",
+              "detail": "Handjes in de lucht"
+            },
+            {
+              "time": "01:00",
+              "title": "Einde feest",
+              "detail": "Tot sinas"
+            }
+          ]
+        }
+      ]
+    },
+    "acts": {
+      "title": "Wil je bijdragen aan de feestvreugde?",
+      "text": "Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.",
+      "email": "email@email.com"
+    },
+    "gift": {
+      "title": "Een bijdrage aan onze wijncursus",
+      "text": "Samen zuipen tot we kruipen. Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen."
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Wat is de dresscode?",
+          "answer": "Chique de friemel"
+        },
+        {
+          "question": "Zijn kinderen welkom?",
+          "answer": "Kinderen zijn welkom, maar houd er rekening mee dat het een volledig feestprogramma is zonder specifiek kinderprogramma."
+        },
+        {
+          "question": "Hoe gaat het met dieetwensen?",
+          "answer": "Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven."
+        },
+        {
+          "question": "Hoe zit het met parkeren?",
+          "answer": "Er is gratis parkeren op het terrein. Rijd via de hoofdingang en volg de borden 'Gasten parking'."
+        }
+      ]
+    },
+    "mc": {
+      "name": "Priscilla Been",
+      "role": "Ceremoniemeester",
+      "text": "Priscilla begeleidt de dag en houdt het programma op de rails. Ze neemt het woord op de juiste momenten en zorgt dat jij zorgeloos kunt genieten.",
+      "email": "priscilla@example.com"
+    },
+    "rsvp": {
+      "text": "Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de dag. Aanmelden kan via de knop hieronder.",
+      "button_text": "Aanmelden",
+      "deadline": "1 augustus 2026",
+      "notion_url": "https://tally.so/r/Y5JJ4z"
+    }
+  },
+  "avond": {
+    "header": {
+      "name_1": "Sebastiaan",
+      "name_2": "Esmeralda",
+      "date": "31 oktober 2026",
+      "subtitle": ""
+    },
+    "location": {
+      "venue_name": "Landgoed Twistvliet",
+      "address": "Koningin Emmaweg 4, 4354 KC Vrouwenpolder",
+      "region": "Zeeland",
+      "arrival_label": "Aankomst vanaf 20:30",
+      "arrival_note": "Het feest begint om 21:00, zorg dat je er dan uiterlijk bent. Wil je 's middags ook bij de ceremonie zijn? Dat zouden we heel leuk vinden! Geef dit even aan in de RSVP.",
+      "maps_query": "Landgoed+Twistvliet+Vrouwenpolder+Zeeland"
+    },
+    "program": {
+      "days": [
+        {
+          "label": "Zaterdag 31 oktober",
+          "items": [
+            {
+              "time": "14:00",
+              "title": "Ceremonie",
+              "detail": "Wil je 's middags ook bij de ceremonie zijn? Dat zouden we heel leuk vinden! Geef dit even aan in de RSVP."
+            },
+            {
+              "time": "20:30",
+              "title": "Feest",
+              "detail": "Handjes in de lucht"
+            },
+            {
+              "time": "01:00",
+              "title": "Einde feest",
+              "detail": "Tot sinas"
+            }
+          ]
+        }
+      ]
+    },
+    "acts": {
+      "title": "Wil je bijdragen aan de feestvreugde?",
+      "text": "Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.",
+      "email": "email@email.com"
+    },
+    "gift": {
+      "title": "Een bijdrage aan onze wijncursus",
+      "text": "Samen zuipen tot we kruipen. Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen."
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Wat is de dresscode?",
+          "answer": "Chique de friemel"
+        },
+        {
+          "question": "Zijn kinderen welkom?",
+          "answer": "Dit feest is voor volwassenen. We hopen op jullie begrip — en op een avond vol dans en plezier!"
+        },
+        {
+          "question": "Hoe gaat het met dieetwensen?",
+          "answer": "Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven."
+        },
+        {
+          "question": "Hoe zit het met parkeren?",
+          "answer": "Er is gratis parkeren op het terrein. Rijd via de hoofdingang en volg de borden 'Gasten parking'."
+        }
+      ]
+    },
+    "mc": {
+      "name": "Priscilla Been",
+      "role": "Ceremoniemeester",
+      "text": "Priscilla begeleidt de avond en zorgt ervoor dat alles op rolletjes loopt. Heb je vragen over het programma? Priscilla helpt je verder.",
+      "email": "priscilla@example.com"
+    },
+    "rsvp": {
+      "text": "Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de avond. Aanmelden kan via de knop hieronder.",
+      "button_text": "Aanmelden",
+      "deadline": "1 augustus 2026",
+      "notion_url": "https://tally.so/r/D4xx7X"
+    }
+  }
+}
