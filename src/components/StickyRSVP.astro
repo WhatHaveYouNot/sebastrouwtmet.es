@@ -1,0 +1,109 @@
+---
+interface Props {
+  button_text: string;
+  deadline: string;
+  notion_url: string;
+}
+const { deadline, notion_url } = Astro.props;
+---
+
+<div
+  id="sticky-rsvp"
+  aria-label="Aanmelden voor de bruiloft"
+  class="sticky-rsvp fixed bottom-0 left-0 right-0 z-50"
+>
+  <div class="sticky-rsvp-inner px-5 py-3 md:py-4 flex items-center gap-4 max-w-5xl mx-auto">
+    <img
+      src="/images/flower-logo.png"
+      alt=""
+      aria-hidden="true"
+      class="sticky-flower shrink-0 w-5 h-5 opacity-50"
+    />
+
+    <div class="min-w-0 flex-1">
+      <p class="text-white font-body text-sm leading-tight" style="font-weight: 500;">
+        Sebastiaan &amp; Esmeralda
+      </p>
+      <p class="font-body text-xs leading-tight mt-0.5" style="font-weight: 300; color: rgba(255,255,255,0.65);">
+        Aanmelden vóór <span style="color: rgba(196,185,152,0.95);">{deadline}</span>
+      </p>
+    </div>
+
+    <a
+      href={notion_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="sticky-rsvp-btn shrink-0 font-body text-xs uppercase tracking-[0.18em] px-5 py-2.5 md:px-7 md:py-3 rounded-full"
+      style="font-weight: 500;"
+    >
+      RSVP
+    </a>
+  </div>
+</div>
+
+<style>
+  .sticky-rsvp {
+    background: rgba(80, 0, 18, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+  }
+
+  .sticky-rsvp.is-hidden {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sticky-flower {
+    filter: brightness(0) invert(1);
+  }
+
+  .sticky-rsvp-btn {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .sticky-rsvp-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+</style>
+
+<script>
+  const bar = document.getElementById('sticky-rsvp');
+  const heroSection = document.querySelector<HTMLElement>('[data-hero-section]');
+  const rsvpSection = document.getElementById('rsvp-section');
+
+  if (bar) {
+    let heroVisible = true;
+    let rsvpVisible = false;
+
+    function updateBar() {
+      if (heroVisible || rsvpVisible) {
+        bar!.classList.add('is-hidden');
+      } else {
+        bar!.classList.remove('is-hidden');
+      }
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target === heroSection) heroVisible = entry.isIntersecting;
+          if (entry.target === rsvpSection) rsvpVisible = entry.isIntersecting;
+        });
+        updateBar();
+      },
+      { threshold: 0 }
+    );
+
+    if (heroSection) observer.observe(heroSection);
+    if (rsvpSection) observer.observe(rsvpSection);
+  }
+</script>

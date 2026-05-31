@@ -113,55 +113,6 @@ const { title, variant } = Astro.props;
         );
       }
 
-      // Horizontal scroll timeline (weekend page)
-      const hSection = document.querySelector<HTMLElement>('[data-h-scroll]');
-      const hTrack = document.querySelector<HTMLElement>('[data-h-track]');
-
-      if (hSection && hTrack) {
-        const cards = Array.from(document.querySelectorAll('[data-day-card]'));
-
-        function initHScroll() {
-          if (window.innerWidth < 768) {
-            hSection.style.height = '';
-            hTrack.style.transform = '';
-            return;
-          }
-
-          const trackWidth = hTrack.scrollWidth;
-          const viewportWidth = window.innerWidth;
-          const padding = 192; // px-24 * 2
-          const maxShift = Math.max(0, trackWidth - viewportWidth + padding);
-
-          hSection.style.height = `calc(100vh + ${maxShift}px)`;
-
-          function onScroll() {
-            if (window.innerWidth < 768) return;
-            const sectionTop = hSection!.getBoundingClientRect().top + window.scrollY;
-            const scrollInSection = window.scrollY - sectionTop;
-            const scrollMax = hSection!.offsetHeight - window.innerHeight;
-            const progress = Math.max(0, Math.min(1, scrollInSection / scrollMax));
-
-            hTrack!.style.transform = `translateX(${-progress * maxShift}px)`;
-
-            const activeIndex = Math.round(progress * (cards.length - 1));
-            cards.forEach((card, i) => {
-              card.classList.toggle('h-card-active', i === activeIndex);
-            });
-          }
-
-          window.addEventListener('scroll', onScroll, { passive: true });
-          onScroll();
-        }
-
-        initHScroll();
-
-        let resizeTimer: ReturnType<typeof setTimeout>;
-        window.addEventListener('resize', () => {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(initHScroll, 150);
-        });
-      }
-
       // ── Rolling Flower ───────────────────────────────────────────────────
       const flowerRoller = document.getElementById('flower-roller') as HTMLElement | null;
       const flowerImg    = document.getElementById('flower-img')    as HTMLImageElement | null;

@@ -22,7 +22,7 @@
             {
               "time": "17:00",
               "title": "Aankomst & check-in",
-              "detail": "Zet je koffer in de landhuis of cottage en maak je klaar voor de eerste avond"
+              "detail": "Zet je koffer in jouw landhuis of cottage en maak je klaar voor de eerste avond."
             },
             {
               "time": "18:00",
@@ -36,7 +36,7 @@
             },
             {
               "time": "20:30",
-              "title": "Borrel en Gezelligheid",
+              "title": "Borrel en gezelligheid",
               "detail": "En misschien tijd voor wat gekkigheid?"
             },
             {
@@ -50,9 +50,9 @@
           "label": "Zaterdag 31 oktober",
           "items": [
             {
-              "time": "08:00 - 10:00",
+              "time": "08:00",
               "title": "Ontbijt",
-              "detail": "Het ontbijt staat klaar vanaf 08:00 uur in de ontbijtzaal. Ontbijt wanneer je wil, en geniet van een vrije ochtend."
+              "detail": "Het ontbijt staat klaar tot 10:00 in de ontbijtzaal. Ontbijt wanneer je wil, en geniet van een vrije ochtend."
             },
             {
               "time": "11:45",
@@ -97,12 +97,12 @@
             {
               "time": "08:30",
               "title": "Ontbijt",
-              "detail": "Geniet van een laatste gemeenschappelijk ontbijt."
+              "detail": "Met een kater of zonder — samen sluiten we het trouwweekend af met een gezamenlijk ontbijt."
             },
             {
               "time": "10:00",
               "title": "Afscheid",
-              "detail": "Check-out, groepsafscheid en goede wensen voor de reis."
+              "detail": "Check-out en groepsafscheid. Tot de volgende keer!"
             }
           ]
         }
@@ -110,18 +110,22 @@
     },
     "acts": {
       "title": "Wil je bijdragen aan de feestvreugde?",
-      "text": "Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.",
+      "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
       "email": "email@email.com"
     },
     "gift": {
       "title": "Een bijdrage aan onze wijncursus",
-      "text": "Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen. De bijdrage kunnen jullie in de cadeaubox bij de ingang achterlaten."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang."
     },
     "faq": {
       "items": [
         {
           "question": "Wat is de dresscode?",
           "answer": "Vrijdag: niet-zo-chique-de-friemel, zaterdag: chique-de-friemel"
+        },
+        {
+          "question": "Zijn kinderen welkom?",
+          "answer": "Kinderen zijn welkom, maar houd er rekening mee dat het een volledig feestprogramma is zonder specifiek kinderprogramma."
         },
         {
           "question": "Hoe gaat het met dieetwensen?",
@@ -177,7 +181,7 @@
             {
               "time": "12:30",
               "title": "Lunch",
-              "detail": "We lunchen samen met elkaar in de kasteelzaal"
+              "detail": "We lunchen samen met elkaar in de kasteelzaal."
             },
             {
               "time": "14:00",
@@ -210,12 +214,12 @@
     },
     "acts": {
       "title": "Wil je bijdragen aan de feestvreugde?",
-      "text": "Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.",
+      "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
       "email": "email@email.com"
     },
     "gift": {
       "title": "Een bijdrage aan onze wijncursus",
-      "text": "Samen zuipen tot we kruipen. Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen."
+      "text": "We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven."
     },
     "faq": {
       "items": [
@@ -291,12 +295,12 @@
     },
     "acts": {
       "title": "Wil je bijdragen aan de feestvreugde?",
-      "text": "Lijkt ons top, maar hier hebben we wel wat ideeën voor. Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen, en wanneer hier ruimte voor is.",
+      "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
       "email": "email@email.com"
     },
     "gift": {
       "title": "Een bijdrage aan onze wijncursus",
-      "text": "Samen zuipen tot we kruipen. Esmeralda en Sebastiaan willen graag samen de SDEN-3 wijncursus volgen. Graag ontvangen zij hiervoor een bijdrage om dit te bekostigen."
+      "text": "We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven."
     },
     "faq": {
       "items": [
@@ -309,12 +313,8 @@
           "answer": "Dit feest is voor volwassenen. We hopen op jullie begrip — en op een avond vol dans en plezier!"
         },
         {
-          "question": "Hoe gaat het met dieetwensen?",
-          "answer": "Geef je dieetwensen (vegetarisch, veganistisch of allergieën) door bij je aanmelding. We zorgen voor goede alternatieven."
-        },
-        {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is gratis parkeren op het terrein. Rijd via de hoofdingang en volg de borden 'Gasten parking'."
+          "answer": "Er is gratis parkeren op het terrein. Rijd via de hoofdingang en volg de borden ‘Gasten parking’."
         }
       ]
     },

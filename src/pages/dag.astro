@@ -8,6 +8,7 @@ import GiftTip from '../components/GiftTip.astro';
 import FAQ from '../components/FAQ.astro';
 import CeremonyMaster from '../components/CeremonyMaster.astro';
 import RSVPButton from '../components/RSVPButton.astro';
+import StickyRSVP from '../components/StickyRSVP.astro';
 import data from '../data/wedding-data.json';
 
 const d = data.dag;
@@ -33,7 +34,8 @@ const countdownTarget = countdownFrom(d.program);
   <ProgramTimeline days={d.program.days} />
   <Acts {...d.acts} />
   <GiftTip {...d.gift} />
+  <RSVPButton {...d.rsvp} />
   <FAQ items={d.faq.items} />
   <CeremonyMaster {...d.mc} />
-  <RSVPButton {...d.rsvp} />
+  <StickyRSVP button_text={d.rsvp.button_text} deadline={d.rsvp.deadline} notion_url={d.rsvp.notion_url} />
 </WeddingLayout>

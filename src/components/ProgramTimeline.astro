@@ -20,124 +20,73 @@ const isMultiDay = days.length > 1;
 
 {
   isMultiDay ? (
-    /* ── Horizontal scroll layout (desktop) / vertical (mobile) ── */
-    <section data-h-scroll class="relative bg-wedding-bg">
-      {/* Mobile: vertical timeline */}
-      <div class="md:hidden section-padding">
-        <div class="content-width">
-          <p class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
-            Programma
-          </p>
-          <h2
-            data-letter-reveal
-            class="font-display text-4xl text-wedding-text mb-14"
-            style="font-weight: 600;"
-          >
-            Het programma
-          </h2>
-          {days.map((day) => (
-            <div class="mb-14 last:mb-0">
-              <h3 class="text-lg text-wedding-gold mb-6" style="font-weight: 500; letter-spacing: 0.05em;">
-                {day.label}
-              </h3>
-              <div class="relative pl-6">
-                <div class="absolute left-0 top-2 bottom-2 w-px bg-wedding-divider" />
-                <div class="space-y-7">
-                  {day.items.map((item) => (
-                    <div class="relative">
-                      <div class="absolute -left-[1.625rem] top-1.5 w-2.5 h-2.5 rounded-full bg-wedding-accent ring-2 ring-[#8B0020]" />
-                      <div class="flex items-baseline gap-5">
-                        {item.time && (
-                          <span class="text-wedding-accent text-sm font-body tabular-nums shrink-0 min-w-[3rem]" style="font-weight: 400;">
-                            {item.time}
-                          </span>
-                        )}
-                        <div>
-                          <span class="text-wedding-text font-body" style="font-weight: 500;">{item.title}</span>
-                          {item.detail && (
-                            <p class="text-wedding-muted text-sm mt-1 leading-relaxed" style="font-weight: 300;">
-                              {item.detail}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+    <section class="section-padding bg-wedding-bg">
+      <div class="content-width">
+        <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
+          Programma
+        </p>
+        <h2
+          data-reveal
+          data-letter-reveal
+          data-reveal-delay="1"
+          class="font-display text-4xl text-wedding-text mb-10"
+          style="font-weight: 600;"
+        >
+          Wanneer ben je waar?
+        </h2>
+
+        {/* ── Tab buttons ── */}
+        <div class="flex gap-1 sm:gap-2 mb-8 overflow-x-auto pb-1 -mx-1 px-1 scrollbar-none" role="tablist" aria-label="Programma per dag">
+          {days.map((day, i) => (
+            <button
+              role="tab"
+              data-tab={i}
+              aria-selected={i === 0 ? 'true' : 'false'}
+              aria-controls={`panel-${i}`}
+              id={`tab-${i}`}
+              class="prog-tab font-body text-sm px-5 py-2 rounded-full transition-all"
+              style="font-weight: 400;"
+            >
+              {day.label}
+            </button>
           ))}
         </div>
-      </div>
 
-      {/* Desktop: sticky horizontal scroll */}
-      <div class="hidden md:block sticky top-0 h-screen overflow-hidden">
-        {/* Header */}
-        <div
-          class="absolute top-0 left-0 right-0 pt-16 pb-8 z-10 text-center"
-          style="background: linear-gradient(to bottom, #8B0020 60%, transparent);"
-        >
-          <p class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-3">
-            Programma
-          </p>
-          <h2
-            data-letter-reveal
-            class="font-display text-4xl text-wedding-text"
-            style="font-weight: 600;"
-          >
-            Het programma
-          </h2>
-        </div>
-
-        {/* Horizontal track */}
-        <div class="absolute inset-0 flex items-center" style="padding-top: 140px; padding-bottom: 90px; overflow: hidden;">
+        {/* ── Day panels ── */}
+        {days.map((day, i) => (
           <div
-            data-h-track
-            class="flex gap-8 px-24 will-change-transform"
-            style="width: max-content;"
+            role="tabpanel"
+            id={`panel-${i}`}
+            aria-labelledby={`tab-${i}`}
+            data-panel={i}
+            class={`liquid-glass rounded-2xl p-7 md:p-10 prog-panel${i === 0 ? '' : ' prog-panel--hidden'}`}
           >
-            {days.map((day, di) => (
-              <div
-                data-day-card={di}
-                class={`liquid-glass rounded-2xl p-8 md:p-10 shrink-0 ${di === 0 ? 'h-card-active' : ''}`}
-                style="width: min(72vw, 580px); max-height: calc(100vh - 280px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.2) transparent;"
-              >
-                <h3
-                  class="text-wedding-gold text-sm uppercase tracking-[0.15em] mb-6 pb-4"
-                  style="font-weight: 500; border-bottom: 1px solid rgba(255,255,255,0.15);"
-                >
-                  {day.label}
-                </h3>
-                <div class="space-y-5">
-                  {day.items.map((item) => (
-                    <div class="flex gap-5 items-start">
-                      {item.time && (
-                        <span class="text-wedding-accent text-sm tabular-nums shrink-0 min-w-[2.5rem] pt-0.5" style="font-weight: 400;">
-                          {item.time}
-                        </span>
-                      )}
-                      <div class="flex-1 min-w-0">
-                        <span class="text-wedding-text text-sm" style="font-weight: 500;">{item.title}</span>
-                        {item.detail && (
-                          <p class="text-wedding-muted text-xs mt-1 leading-relaxed" style="font-weight: 300;">
-                            {item.detail}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+            <div class="space-y-5">
+              {day.items.map((item) => (
+                <div class="flex gap-5 items-start">
+                  {item.time && (
+                    <span
+                      class="text-wedding-accent text-sm tabular-nums shrink-0 min-w-[3rem] pt-0.5 font-body"
+                      style="font-weight: 400;"
+                    >
+                      {item.time}
+                    </span>
+                  )}
+                  <div class="flex-1 min-w-0">
+                    <span class="text-wedding-text text-sm font-body" style="font-weight: 500;">
+                      {item.title}
+                    </span>
+                    {item.detail && (
+                      <p class="text-wedding-muted text-xs mt-1 leading-relaxed" style="font-weight: 300;">
+                        {item.detail}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-
-        {/* Scroll hint */}
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3" style="color: rgba(255,255,255,0.45); margin-top: 3rem;">
-          <div class="w-8 h-px" style="background: rgba(255,255,255,0.25);" />
-          <span class="text-[9px] uppercase tracking-[0.35em]">Scroll om te navigeren</span>
-          <div class="w-8 h-px" style="background: rgba(255,255,255,0.25);" />
-        </div>
+        ))}
       </div>
     </section>
   ) : (
@@ -154,7 +103,7 @@ const isMultiDay = days.length > 1;
           class="font-display text-4xl text-wedding-text mb-14"
           style="font-weight: 600;"
         >
-          Het programma
+          Wanneer ben je waar?
         </h2>
 
         <div class="relative pl-6">
@@ -177,15 +126,19 @@ const isMultiDay = days.length > 1;
                   return (
                     <div data-reveal data-reveal-delay={delay} class="relative">
                       <div class="absolute -left-[1.625rem] top-1.5 w-2.5 h-2.5 rounded-full bg-wedding-accent ring-2 ring-[#8B0020]" />
-
                       <div class="flex items-baseline gap-5">
                         {item.time && (
-                          <span class="text-wedding-accent text-sm font-body tabular-nums shrink-0 min-w-[3rem]" style="font-weight: 400;">
+                          <span
+                            class="text-wedding-accent text-sm font-body tabular-nums shrink-0 min-w-[3rem]"
+                            style="font-weight: 400;"
+                          >
                             {item.time}
                           </span>
                         )}
                         <div>
-                          <span class="text-wedding-text font-body" style="font-weight: 500;">{item.title}</span>
+                          <span class="text-wedding-text font-body" style="font-weight: 500;">
+                            {item.title}
+                          </span>
                           {item.detail && (
                             <p class="text-wedding-muted text-sm mt-1 leading-relaxed" style="font-weight: 300;">
                               {item.detail}
@@ -204,3 +157,88 @@ const isMultiDay = days.length > 1;
     </section>
   )
 }
+
+<style>
+  /* ── Desktop: pill style ── */
+  .prog-tab {
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.55);
+    background: transparent;
+    flex-shrink: 0;
+  }
+
+  .prog-tab[aria-selected="true"] {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #fff;
+  }
+
+  .prog-tab:hover:not([aria-selected="true"]) {
+    border-color: rgba(255, 255, 255, 0.28);
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  /* ── Mobile: minimal underline style ── */
+  @media (max-width: 639px) {
+    .prog-tab {
+      border: none;
+      background: transparent !important;
+      color: rgba(255, 255, 255, 0.38);
+      padding: 0.4rem 0.6rem 0.6rem;
+      font-size: 0.72rem;
+      position: relative;
+    }
+
+    .prog-tab[aria-selected="true"] {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .prog-tab[aria-selected="true"]::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0.6rem;
+      right: 0.6rem;
+      height: 2px;
+      border-radius: 1px;
+      background: rgba(196, 185, 152, 0.75);
+    }
+
+    .prog-tab:hover:not([aria-selected="true"]) {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .prog-panel {
+    transition: opacity 0.25s ease;
+  }
+
+  .prog-panel--hidden {
+    display: none;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<script>
+  const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>('.prog-tab'));
+  const panels = Array.from(document.querySelectorAll<HTMLElement>('.prog-panel'));
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const idx = Number(tab.dataset.tab);
+
+      tabs.forEach((t) => t.setAttribute('aria-selected', 'false'));
+      panels.forEach((p) => p.classList.add('prog-panel--hidden'));
+
+      tab.setAttribute('aria-selected', 'true');
+      panels[idx]?.classList.remove('prog-panel--hidden');
+    });
+  });
+</script>

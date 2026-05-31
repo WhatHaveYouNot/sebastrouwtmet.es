@@ -13,11 +13,6 @@ const { title, text } = Astro.props;
       data-reveal
       class="liquid-glass relative px-8 py-16 md:px-14 md:py-20 text-center overflow-hidden"
     >
-      <!-- Decorative wine background -->
-      <div class="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
-        <span style="font-size: 5rem; opacity: 0.12; transform: rotate(-15deg); line-height: 1; user-select: none;">🍷</span>
-      </div>
-
       <p class="relative text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">Cadeau</p>
       <h2
         data-reveal
@@ -36,11 +31,11 @@ const { title, text } = Astro.props;
         set:html={text}
       />
 
-      <!-- Floral divider -->
+      <!-- Divider: line + dot -->
       <div class="relative flex items-center justify-center gap-4 mt-10">
-        <div class="h-px flex-1" style="background: rgba(255,255,255,0.15);"></div>
-        <img src="/images/flower-logo.png" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.35; object-fit: contain;" />
-        <div class="h-px flex-1" style="background: rgba(255,255,255,0.15);"></div>
+        <div class="h-px flex-1" style="background: rgba(196,185,152,0.3);"></div>
+        <div class="w-2 h-2 rounded-full flex-shrink-0" style="background: rgba(255,255,255,0.5);"></div>
+        <div class="h-px flex-1" style="background: rgba(196,185,152,0.3);"></div>
       </div>
     </div>
   </div>
