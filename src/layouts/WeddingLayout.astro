@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import NavBar from '../components/NavBar.astro';
 
 interface Props {
   title: string;
@@ -19,10 +20,13 @@ const { title, variant } = Astro.props;
     <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
   <body data-variant={variant} class="font-body bg-wedding-bg text-wedding-text">
+    <NavBar />
     <slot />
 
-    <footer class="py-10 text-center text-wedding-muted text-sm font-body border-t border-wedding-divider">
-      S &amp; E — 2026
+    <footer style="background:#6B0018;padding:3rem 2rem;text-align:center;">
+      <img src="/images/flower-logo.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;opacity:0.4;margin:0 auto 1rem;display:block;" />
+      <p style="color:rgba(255,255,255,0.55);font-size:0.75rem;font-weight:300;letter-spacing:0.08em;font-family:inherit;">Sebastiaan &amp; Esmeralda — 31 oktober 2026</p>
+      <p style="color:rgba(255,255,255,0.25);font-size:0.75rem;font-weight:300;margin-top:0.5rem;font-family:inherit;">Gemaakt met liefde</p>
     </footer>
 
     <!-- Rolling flower scroll indicator -->
@@ -112,6 +116,55 @@ const { title, variant } = Astro.props;
           { passive: true }
         );
       }
+
+      // ── NavBar show/hide + active section ────────────────────────────────
+      const siteNav = document.getElementById('site-nav') as HTMLElement | null;
+      const navLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('.nav-link[data-nav]'));
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const id = link.dataset.nav;
+          const target = id ? document.getElementById(id) : null;
+          if (target) {
+            const top = target.getBoundingClientRect().top + window.scrollY - 56;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      });
+
+      const heroElForNav = document.querySelector<HTMLElement>('[data-hero-section]');
+
+      function updateNavVisibility() {
+        if (!siteNav) return;
+        const threshold = heroElForNav ? heroElForNav.offsetHeight * 0.7 : window.innerHeight * 0.7;
+        siteNav.style.transform = window.scrollY > threshold ? 'translateY(0)' : 'translateY(-100%)';
+      }
+
+      window.addEventListener('scroll', updateNavVisibility, { passive: true });
+      updateNavVisibility();
+
+      const navSectionIds = ['brief', 'locatie', 'programma', 'ceremoniemeester', 'rsvp', 'faq', 'acts', 'cadeau'];
+
+      function setNavActive(id: string) {
+        navLinks.forEach((link) => {
+          link.classList.toggle('nav-link--active', link.dataset.nav === id);
+        });
+      }
+
+      const navSectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) setNavActive(entry.target.id);
+          });
+        },
+        { threshold: 0.2, rootMargin: '-10% 0px -65% 0px' }
+      );
+
+      navSectionIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) navSectionObserver.observe(el);
+      });
 
       // ── Rolling Flower ───────────────────────────────────────────────────
       const flowerRoller = document.getElementById('flower-roller') as HTMLElement | null;

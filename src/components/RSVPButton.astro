@@ -9,7 +9,7 @@ interface Props {
 const { text, button_text, deadline, notion_url } = Astro.props;
 ---
 
-<section id="rsvp-section" class="section-padding text-center relative overflow-hidden bg-wedding-bg-alt">
+<section id="rsvp" class="section-padding text-center relative overflow-hidden bg-wedding-bg">
   <!-- Subtle top line -->
   <div
     class="absolute top-0 left-0 right-0 h-px"
@@ -45,8 +45,8 @@ const { text, button_text, deadline, notion_url } = Astro.props;
       href={notion_url}
       target="_blank"
       rel="noopener noreferrer"
-      class="liquid-glass-button inline-block font-body text-sm uppercase tracking-[0.2em] px-8 py-4 md:px-12"
-      style="font-weight: 500; transition: transform 0.15s ease, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;"
+      class="rsvp-btn inline-block font-body text-sm uppercase tracking-[0.2em] px-8 py-4 md:px-12"
+      style="font-weight: 500;"
     >
       {button_text}
     </a>
@@ -57,8 +57,27 @@ const { text, button_text, deadline, notion_url } = Astro.props;
   </div>
 </section>
 
+<style>
+  .rsvp-btn {
+    background: #ffffff;
+    color: #8B0020;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    display: inline-block;
+  }
+
+  .rsvp-btn:hover {
+    background: rgba(255, 255, 255, 0.88);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+</style>
+
 <script>
-  const btn = document.getElementById('rsvp-btn');
+  const btn = document.getElementById('rsvp-btn') as HTMLAnchorElement | null;
   const isTouch = window.matchMedia('(hover: none)').matches;
 
   if (btn && !isTouch) {

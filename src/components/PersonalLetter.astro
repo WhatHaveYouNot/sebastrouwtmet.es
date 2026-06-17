@@ -1,0 +1,61 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const paragraphs = text.split('\n\n').filter(Boolean);
+const opening = paragraphs[0] ?? '';
+const body     = paragraphs.slice(1, -1); // drop opening and closing ("Met liefde,")
+---
+
+<section id="brief" class="bg-wedding-bg" style="padding-top:clamp(40px,8vw,80px);padding-bottom:clamp(40px,8vw,80px);">
+  <div style="max-width:600px; margin:0 auto; padding:0 1.5rem; text-align:center;">
+
+    <!-- Couple photo -->
+    <div data-reveal class="flex justify-center mb-5">
+      <img
+        src="/images/couple.jpeg"
+        alt="Sebastiaan & Esmeralda"
+        class="w-[140px] h-[140px] md:w-[180px] md:h-[180px] rounded-full object-cover"
+        style="border:3px solid rgba(255,255,255,0.2); box-shadow:0 8px 40px rgba(0,0,0,0.35);"
+      />
+    </div>
+
+    <!-- Vertical connector line -->
+    <div class="flex justify-center mb-5">
+      <div style="width:1px;height:40px;background:rgba(255,255,255,0.15);"></div>
+    </div>
+
+    <!-- Opening salutation -->
+    <p
+      data-reveal
+      data-reveal-delay="1"
+      class="font-display"
+      style="font-size:1.3rem;font-style:italic;font-weight:400;color:rgba(255,255,255,0.9);margin-bottom:1.5rem;line-height:1.4;"
+    >
+      {opening}
+    </p>
+
+    <!-- Body paragraphs -->
+    <div
+      data-reveal
+      data-reveal-delay="2"
+      style="max-width:500px;margin:0 auto;font-weight:300;font-size:1.05rem;line-height:1.9;color:rgba(255,255,255,0.8);"
+    >
+      {body.map((para) => (
+        <p style="margin-bottom:1rem;">{para}</p>
+      ))}
+    </div>
+
+    <!-- Handwritten names -->
+    <div data-reveal data-reveal-delay="3" class="flex justify-center" style="margin-top:1rem;">
+      <img
+        src="/images/handwritten-names.png"
+        alt="Sebastiaan & Esmeralda"
+        style="max-width:250px;width:100%;opacity:0.9;"
+      />
+    </div>
+
+  </div>
+</section>

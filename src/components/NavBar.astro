@@ -1,0 +1,74 @@
+---
+const navItems = [
+  { label: 'Brief',       id: 'brief' },
+  { label: 'Locatie',     id: 'locatie' },
+  { label: 'Programma',   id: 'programma' },
+  { label: 'MC',          id: 'ceremoniemeester' },
+  { label: 'RSVP',        id: 'rsvp' },
+  { label: 'FAQ',         id: 'faq' },
+  { label: 'Acts',        id: 'acts' },
+  { label: 'Cadeau',      id: 'cadeau' },
+];
+---
+
+<nav
+  id="site-nav"
+  aria-label="Sectienavigatie"
+  style="position:fixed;top:0;left:0;right:0;z-index:200;height:48px;background:rgba(20,0,8,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.1);box-shadow:0 4px 20px rgba(0,0,0,0.3);transform:translateY(-100%);transition:transform 0.3s cubic-bezier(0.22,1,0.36,1);will-change:transform;"
+>
+  <div
+    style="height:100%;display:flex;align-items:center;justify-content:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;mask-image:linear-gradient(to right,transparent,black 1.5rem,black calc(100% - 1.5rem),transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 1.5rem,black calc(100% - 1.5rem),transparent);"
+    id="nav-inner"
+  >
+    <div style="display:flex;align-items:center;white-space:nowrap;padding:0 1.5rem;gap:0;" id="nav-links-wrapper">
+      {navItems.map((item, i) => (
+        <>
+          <a
+            href={`#${item.id}`}
+            class="nav-link"
+            data-nav={item.id}
+            style="position:relative;display:inline-flex;align-items:center;height:48px;padding:0 10px;font-size:0.72rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.48);text-decoration:none;transition:color 0.2s ease;white-space:nowrap;font-family:inherit;"
+          >
+            {item.label}
+          </a>
+          {i < navItems.length - 1 && (
+            <span style="color:rgba(255,255,255,0.18);font-size:0.55rem;flex-shrink:0;user-select:none;" aria-hidden="true">|</span>
+          )}
+        </>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<style is:global>
+  #nav-inner::-webkit-scrollbar { display: none; }
+
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .nav-link.nav-link--active {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 500 !important;
+  }
+
+  .nav-link.nav-link--active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1px;
+  }
+
+  @media (max-width: 639px) {
+    .nav-link {
+      font-size: 0.7rem !important;
+      padding: 0 7px !important;
+      letter-spacing: 0.08em !important;
+    }
+  }
+</style>
+

@@ -1,13 +1,15 @@
 ---
 import WeddingLayout from '../layouts/WeddingLayout.astro';
 import HeroHeader from '../components/HeroHeader.astro';
+import PersonalLetter from '../components/PersonalLetter.astro';
+import SectionDivider from '../components/SectionDivider.astro';
 import LocationBlock from '../components/LocationBlock.astro';
 import ProgramTimeline from '../components/ProgramTimeline.astro';
-import Acts from '../components/Acts.astro';
-import GiftTip from '../components/GiftTip.astro';
-import FAQ from '../components/FAQ.astro';
 import CeremonyMaster from '../components/CeremonyMaster.astro';
 import RSVPButton from '../components/RSVPButton.astro';
+import FAQ from '../components/FAQ.astro';
+import Acts from '../components/Acts.astro';
+import GiftTip from '../components/GiftTip.astro';
 import StickyRSVP from '../components/StickyRSVP.astro';
 import data from '../data/wedding-data.json';
 
@@ -30,12 +32,20 @@ const countdownTarget = countdownFrom(d.program);
 
 <WeddingLayout title="Sebastiaan & Esmeralda — Avondgasten" variant="avond">
   <HeroHeader {...d.header} countdownTarget={countdownTarget} />
+  <PersonalLetter text={d.letter.text} />
+  <SectionDivider />
   <LocationBlock {...d.location} />
+  <SectionDivider />
   <ProgramTimeline days={d.program.days} />
-  <Acts {...d.acts} />
-  <GiftTip {...d.gift} />
-  <RSVPButton {...d.rsvp} />
-  <FAQ items={d.faq.items} />
+  <SectionDivider />
   <CeremonyMaster {...d.mc} />
-  <StickyRSVP button_text={d.rsvp.button_text} deadline={d.rsvp.deadline} notion_url={d.rsvp.notion_url} />
+  <SectionDivider />
+  <RSVPButton {...d.rsvp} />
+  <SectionDivider />
+  <FAQ items={d.faq.items} />
+  <SectionDivider />
+  <Acts {...d.acts} />
+  <SectionDivider />
+  <GiftTip {...d.gift} />
+  <StickyRSVP {...d.rsvp} />
 </WeddingLayout>

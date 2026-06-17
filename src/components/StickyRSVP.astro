@@ -10,7 +10,7 @@ const { deadline, notion_url } = Astro.props;
 <div
   id="sticky-rsvp"
   aria-label="Aanmelden voor de bruiloft"
-  class="sticky-rsvp fixed bottom-0 left-0 right-0 z-50"
+  class="sticky-rsvp is-hidden fixed bottom-0 left-0 right-0 z-50"
 >
   <div class="sticky-rsvp-inner px-5 py-3 md:py-4 flex items-center gap-4 max-w-5xl mx-auto">
     <img
@@ -78,7 +78,7 @@ const { deadline, notion_url } = Astro.props;
 <script>
   const bar = document.getElementById('sticky-rsvp');
   const heroSection = document.querySelector<HTMLElement>('[data-hero-section]');
-  const rsvpSection = document.getElementById('rsvp-section');
+  const rsvpSection = document.getElementById('rsvp');
 
   if (bar) {
     let heroVisible = true;

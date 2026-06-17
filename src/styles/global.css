@@ -62,9 +62,24 @@
   }
 
   /* Prevent long words/URLs breaking layout on mobile */
-  p, h1, h2, h3, span, a {
+  p, span, a {
     overflow-wrap: break-word;
     word-break: break-word;
+  }
+
+  /* Headings: no mid-word breaks, no automatic hyphens */
+  h1, h2, h3 {
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+
+  /* Reduce heading size on very narrow screens to avoid overflow */
+  @media (max-width: 390px) {
+    h2 {
+      font-size: 1.65rem;
+    }
   }
 }
 
@@ -144,8 +159,8 @@
   }
 
   .section-padding {
-    padding-top: clamp(60px, 10vw, 120px);
-    padding-bottom: clamp(60px, 10vw, 120px);
+    padding-top: clamp(80px, 12vw, 160px);
+    padding-bottom: clamp(80px, 12vw, 160px);
   }
 
   .content-width {

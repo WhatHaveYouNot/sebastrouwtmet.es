@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         'wedding-bg':           '#8B0020',
-        'wedding-bg-alt':       '#6B0018',
+        'wedding-bg-alt':       '#8B0020',
         'wedding-surface':      'rgba(255, 255, 255, 0.08)',
         'wedding-text':         '#FFFFFF',
         'wedding-muted':        'rgba(255, 255, 255, 0.7)',

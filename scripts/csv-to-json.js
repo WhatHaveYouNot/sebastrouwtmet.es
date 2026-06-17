@@ -51,6 +51,10 @@ function buildProgram(sectionData) {
   return { days };
 }
 
+function buildLetter(sectionData) {
+  return { text: (sectionData.text || '').replace(/\\n/g, '\n') };
+}
+
 function buildActs(sectionData) {
   return {
     title: sectionData.title || '',
@@ -77,6 +81,7 @@ for (const type of types) {
   const d = raw[type];
   result[type] = {
     header: d.header || {},
+    letter: buildLetter(d.letter || {}),
     location: d.location || {},
     program: buildProgram(d.program || {}),
     acts: buildActs(d.acts || {}),
