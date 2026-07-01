@@ -18,6 +18,13 @@ const { title, variant } = Astro.props;
     <meta name="robots" content="noindex, nofollow" />
     <title>{title}</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xfne8qsz9m");
+    </script>
   </head>
   <body data-variant={variant} class="font-body bg-wedding-bg text-wedding-text">
     <NavBar />
@@ -69,41 +76,10 @@ const { title, variant } = Astro.props;
 
       document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
 
-      // Letter-by-letter animation for section headings
-      function splitLetters(el: Element) {
-        const text = el.textContent ?? '';
-        el.innerHTML = '';
-        [...text].forEach((char, i) => {
-          const span = document.createElement('span');
-          span.textContent = char === ' ' ? '\u00A0' : char;
-          span.className = 'letter-span';
-          span.style.transitionDelay = `${i * 0.032}s`;
-          el.appendChild(span);
-        });
-      }
-
-      const letterObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.querySelectorAll('.letter-span').forEach((span) => {
-                span.classList.add('visible');
-              });
-              letterObserver.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.3, rootMargin: '0px 0px -40px 0px' }
-      );
-
-      document.querySelectorAll('[data-letter-reveal]').forEach((el) => {
-        splitLetters(el);
-        letterObserver.observe(el);
-      });
-
-      // Hero parallax
+      // Hero parallax \u2014 skipped for users who prefer reduced motion
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const heroContent = document.querySelector<HTMLElement>('[data-hero-content]');
-      if (heroContent) {
+      if (heroContent && !prefersReducedMotion) {
         window.addEventListener(
           'scroll',
           () => {

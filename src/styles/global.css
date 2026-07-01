@@ -55,6 +55,15 @@
     scroll-behavior: smooth;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -136,27 +145,6 @@
   [data-reveal-delay='3'] { transition-delay: 300ms; }
   [data-reveal-delay='4'] { transition-delay: 400ms; }
   [data-reveal-delay='5'] { transition-delay: 500ms; }
-
-  /* ── Section title letter-animation ── */
-  [data-letter-reveal] {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-    overflow: hidden;
-  }
-
-  .letter-span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-                transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .letter-span.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   .section-padding {
     padding-top: clamp(80px, 12vw, 160px);

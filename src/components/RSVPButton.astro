@@ -10,19 +10,12 @@ const { text, button_text, deadline, notion_url } = Astro.props;
 ---
 
 <section id="rsvp" class="section-padding text-center relative overflow-hidden bg-wedding-bg">
-  <!-- Subtle top line -->
-  <div
-    class="absolute top-0 left-0 right-0 h-px"
-    style="background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);"
-  ></div>
-
   <div class="content-width relative">
-    <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
+    <p data-reveal class="text-[13px] uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
       RSVP
     </p>
     <h2
       data-reveal
-      data-letter-reveal
       data-reveal-delay="1"
       class="font-display text-4xl text-wedding-text mb-6"
       style="font-weight: 600;"
@@ -33,7 +26,7 @@ const { text, button_text, deadline, notion_url } = Astro.props;
       data-reveal
       data-reveal-delay="2"
       class="text-wedding-muted max-w-sm mx-auto leading-relaxed mb-10"
-      style="font-weight: 300;"
+      style="font-weight: 400;"
     >
       {text}
     </p>
@@ -59,20 +52,20 @@ const { text, button_text, deadline, notion_url } = Astro.props;
 
 <style>
   .rsvp-btn {
-    background: #ffffff;
-    color: #8B0020;
+    background: #FF6600;
+    color: #000000;
     border-radius: 50px;
     border: none;
     text-decoration: none;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 24px rgba(255, 102, 0, 0.45);
     transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
     display: inline-block;
   }
 
   .rsvp-btn:hover {
-    background: rgba(255, 255, 255, 0.88);
+    background: #FF7A1F;
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 36px rgba(255, 102, 0, 0.6);
   }
 </style>
 
