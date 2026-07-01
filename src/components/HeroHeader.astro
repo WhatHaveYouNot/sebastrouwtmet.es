@@ -15,12 +15,6 @@ const { name_1, name_2, date, subtitle, countdownTarget } = Astro.props;
   data-countdown={countdownTarget}
   class="hero-mirror relative min-h-screen flex items-center justify-center overflow-hidden"
 >
-  <!-- Subtle dot texture -->
-  <div
-    class="absolute inset-0 pointer-events-none"
-    style="background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px); background-size: 40px 40px; opacity: 0.5;"
-  ></div>
-
   <!-- Metallic sheen line at top -->
   <div
     class="absolute top-0 left-0 right-0 h-px"
@@ -31,7 +25,7 @@ const { name_1, name_2, date, subtitle, countdownTarget } = Astro.props;
     <!-- Names with breathing glow -->
     <h1
       class="font-display leading-none tracking-tight hero-names-glow"
-      style="font-size: clamp(2.8rem, 12vw, 10rem); font-weight: 700; letter-spacing: -0.02em; text-shadow: 0 2px 20px rgba(0,0,0,0.5);"
+      style="font-size: clamp(2.8rem, 12vw, 10rem); font-weight: 700; letter-spacing: -0.02em;"
     >
       <span class="block hero-name-1" style="color: #FFFFFF;">{name_1}</span>
       <span
