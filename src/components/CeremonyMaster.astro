@@ -34,12 +34,11 @@ const { name, role, text, email } = Astro.props;
 
       <!-- Info -->
       <div>
-        <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-3">
+        <p data-reveal class="text-[13px] uppercase tracking-[0.3em] text-wedding-accent font-body mb-3">
           {role}
         </p>
         <h2
           data-reveal
-          data-letter-reveal
           data-reveal-delay="1"
           class="font-display text-4xl text-wedding-text mb-5"
           style="font-weight: 600;"
@@ -50,7 +49,7 @@ const { name, role, text, email } = Astro.props;
           data-reveal
           data-reveal-delay="2"
           class="text-wedding-muted leading-relaxed mb-6"
-          style="font-weight: 300;"
+          style="font-weight: 400;"
         >
           {text}
         </p>

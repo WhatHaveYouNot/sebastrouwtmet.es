@@ -35,13 +35,16 @@ function buildProgram(sectionData) {
     const items = [];
     let itemIdx = 1;
     while (true) {
-      const title = sectionData[`day_${dayIdx}_${itemIdx}_title`];
-      if (!title) break;
-      items.push({
-        time: sectionData[`day_${dayIdx}_${itemIdx}_time`] || '',
-        title,
-        detail: sectionData[`day_${dayIdx}_${itemIdx}_detail`] || '',
-      });
+      const titleKey = `day_${dayIdx}_${itemIdx}_title`;
+      if (!(titleKey in sectionData)) break;
+      const title = sectionData[titleKey];
+      if (title) {
+        items.push({
+          time: sectionData[`day_${dayIdx}_${itemIdx}_time`] || '',
+          title,
+          detail: sectionData[`day_${dayIdx}_${itemIdx}_detail`] || '',
+        });
+      }
       itemIdx++;
     }
 

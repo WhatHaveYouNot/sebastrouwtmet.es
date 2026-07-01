@@ -13,12 +13,11 @@ const { items } = Astro.props;
 
 <section id="faq" class="section-padding bg-wedding-bg">
   <div class="content-width">
-    <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
+    <p data-reveal class="text-[13px] uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
       Vragen
     </p>
     <h2
       data-reveal
-      data-letter-reveal
       data-reveal-delay="1"
       class="font-display text-4xl text-wedding-text mb-12"
       style="font-weight: 600;"
@@ -52,7 +51,7 @@ const { items } = Astro.props;
                   </span>
                 </button>
                 <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out">
-                  <p class="pt-4 pb-2 text-wedding-muted leading-relaxed" style="font-weight: 300;">{item.answer}</p>
+                  <p class="pt-4 pb-2 text-wedding-muted leading-relaxed" style="font-weight: 400;">{item.answer}</p>
                 </div>
               </div>
             );

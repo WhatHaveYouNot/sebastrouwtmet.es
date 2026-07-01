@@ -14,13 +14,12 @@ const { title, text, email } = Astro.props;
       data-reveal
       class="liquid-glass relative px-8 py-16 md:px-14 md:py-20 text-center overflow-hidden"
     >
-      <p class="relative text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">Speeches & Acts</p>
+      <p class="relative text-[13px] uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">Speeches & Acts</p>
       <h2
         data-reveal
-        data-letter-reveal
         data-reveal-delay="1"
         class="relative font-display text-3xl md:text-4xl text-wedding-text mb-6"
-        style="font-weight: 600; font-style: italic;"
+        style="font-weight: 600;"
       >
         {title}
       </h2>
@@ -28,7 +27,7 @@ const { title, text, email } = Astro.props;
         data-reveal
         data-reveal-delay="2"
         class="relative text-wedding-muted max-w-prose mx-auto leading-relaxed"
-        style="font-weight: 300;"
+        style="font-weight: 400;"
       >
         {text}
       </p>

@@ -8,8 +8,8 @@ interface Props {
   maps_query: string;
 }
 
-const { venue_name, address, region, arrival_label, arrival_note, maps_query } = Astro.props;
-const mapsUrl = `https://maps.google.com/maps?q=${maps_query}&output=embed&hl=nl&maptype=satellite`;
+const { venue_name, address, region, arrival_note, maps_query } = Astro.props;
+const mapsUrl = `https://maps.google.com/maps?q=${maps_query}&output=embed&hl=nl&t=h`;
 
 const commaIdx = address.indexOf(', ');
 const street = commaIdx >= 0 ? address.slice(0, commaIdx) : address;
@@ -21,7 +21,7 @@ const cityPostal = commaIdx >= 0 ? address.slice(commaIdx + 2) : '';
     <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
       <!-- Details -->
       <div>
-        <p data-reveal class="text-xs uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
+        <p data-reveal class="text-[13px] uppercase tracking-[0.3em] text-wedding-accent font-body mb-4">
           Locatie
         </p>
 
@@ -31,28 +31,21 @@ const cityPostal = commaIdx >= 0 ? address.slice(commaIdx + 2) : '';
             <span class="text-lg flex-shrink-0 mt-0.5" aria-hidden="true">📍</span>
             <div>
               <p
-                data-letter-reveal
                 class="font-display text-wedding-text text-2xl mb-1 leading-tight"
                 style="font-weight: 700; letter-spacing: -0.01em;"
               >{venue_name}</p>
               <p class="text-wedding-muted mb-0.5" style="font-weight: 500;">{street}</p>
-              <p class="text-wedding-muted mb-2" style="font-weight: 300;">{cityPostal}</p>
+              <p class="text-wedding-muted mb-2" style="font-weight: 400;">{cityPostal}</p>
               <p class="text-wedding-muted" style="font-weight: 300; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6;">{region}</p>
             </div>
           </div>
         </div>
 
-        <div data-reveal data-reveal-delay="3" class="mb-3">
-          <span class="arrival-callout inline-flex items-center gap-2 text-sm font-body" style="font-weight: 400;">
-            <span aria-hidden="true">◷</span>
-            {arrival_label}
-          </span>
-        </div>
         <p
           data-reveal
           data-reveal-delay="3"
           class="text-wedding-muted text-sm leading-relaxed"
-          style="font-weight: 300;"
+          style="font-weight: 400;"
         >
           {arrival_note}
         </p>
@@ -79,13 +72,3 @@ const cityPostal = commaIdx >= 0 ? address.slice(commaIdx + 2) : '';
     </div>
   </div>
 </section>
-
-<style>
-  .arrival-callout {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    color: white;
-    padding: 0.75rem 1.5rem;
-  }
-</style>

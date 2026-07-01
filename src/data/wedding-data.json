@@ -7,7 +7,7 @@
       "subtitle": ""
     },
     "letter": {
-      "text": "Lieve vrienden en familie,\n\nWat ontzettend fijn dat jullie erbij zijn op onze grote dag. Na jaren samen weten we één ding zeker: de mensen om ons heen maken het leven mooi. En jullie zijn daar een belangrijk onderdeel van.\n\nWe hebben er alles aan gedaan om er een onvergetelijk weekend van te maken. Geniet mee, dans mee, en maak er samen met ons iets bijzonders van.\n\nMet liefde,"
+      "text": "Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in het Zeeland waar we zo van houden. We kijken er ontzettend naar uit, en horen graag of jullie erbij kunnen zijn op deze bijzondere dag.\n\nMet liefde,"
     },
     "location": {
       "venue_name": "Landgoed Twistvliet",
@@ -31,11 +31,6 @@
               "time": "18:00",
               "title": "Welkom met champagne",
               "detail": "Verzamelen in de kasteelzaal voor een glas (alcoholvrije) champagne."
-            },
-            {
-              "time": "18:30",
-              "title": "Welkomstspeech",
-              "detail": ""
             },
             {
               "time": "18:30",
@@ -127,12 +122,12 @@
       ]
     },
     "acts": {
-      "title": "Wil je iets bijdragen aan het programma?",
+      "title": "Speech houden? Act doen?",
       "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
       "email": "email@email.com"
     },
     "gift": {
-      "title": "Een bijdrage aan onze wijncursus",
+      "title": "Wijncursus",
       "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang."
     },
     "faq": {
@@ -172,6 +167,10 @@
         {
           "question": "Hoe laat is de ceremonie?",
           "answer": "De ceremonie begint stipt om 15:00 op zaterdag in de orangerie. Zorg dat je op tijd bent — om 14:00 is er eerst koffie en patisserie."
+        },
+        {
+          "question": "Wat als het regent?",
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem. Alleen de vrije zaterdagochtend (strand, wandelen) is weersafhankelijk — maar die is toch al optioneel!"
         }
       ]
     },
@@ -196,7 +195,7 @@
       "subtitle": ""
     },
     "letter": {
-      "text": "Lieve vrienden en familie,\n\nWat ontzettend fijn dat jullie erbij zijn op onze grote dag. Na jaren samen weten we één ding zeker: de mensen om ons heen maken het leven mooi. En jullie zijn daar een belangrijk onderdeel van.\n\nWe hebben er alles aan gedaan om er een onvergetelijk weekend van te maken. Geniet mee, dans mee, en maak er samen met ons iets bijzonders van.\n\nMet liefde,"
+      "text": "Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in het Zeeland waar we zo van houden. We kijken er ontzettend naar uit, en horen graag of jullie erbij kunnen zijn op deze bijzondere dag.\n\nMet liefde,"
     },
     "location": {
       "venue_name": "Landgoed Twistvliet",
@@ -256,12 +255,12 @@
       ]
     },
     "acts": {
-      "title": "Wil je iets bijdragen aan het programma?",
+      "title": "Speech houden? Act doen?",
       "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
       "email": "email@email.com"
     },
     "gift": {
-      "title": "Een bijdrage aan onze wijncursus",
+      "title": "Wijncursus",
       "text": "We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven."
     },
     "faq": {
@@ -297,6 +296,10 @@
         {
           "question": "Moet ik zelf overnachting regelen?",
           "answer": "Ja, er is geen overnachting op het landgoed voor daggasten. We raden aan om in de omgeving iets te boeken — Vrouwenpolder en Veere hebben mooie opties."
+        },
+        {
+          "question": "Wat als het regent?",
+          "answer": "Geen zorgen — de ceremonie, borrel en het diner zijn allemaal binnen in de orangerie en kasteelzaal. Regen heeft geen invloed op het programma."
         }
       ]
     },
@@ -321,7 +324,7 @@
       "subtitle": ""
     },
     "letter": {
-      "text": "Lieve vrienden en familie,\n\nWat ontzettend fijn dat jullie erbij zijn op onze grote dag. Na jaren samen weten we één ding zeker: de mensen om ons heen maken het leven mooi. En jullie zijn daar een belangrijk onderdeel van.\n\nWe hebben er alles aan gedaan om er een onvergetelijk weekend van te maken. Geniet mee, dans mee, en maak er samen met ons iets bijzonders van.\n\nMet liefde,"
+      "text": "Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in het Zeeland waar we zo van houden. We kijken er ontzettend naar uit, en horen graag of jullie erbij kunnen zijn op deze bijzondere dag.\n\nMet liefde,"
     },
     "location": {
       "venue_name": "Landgoed Twistvliet",
@@ -371,12 +374,12 @@
       ]
     },
     "acts": {
-      "title": "Wil je iets bijdragen aan het programma?",
+      "title": "Speech houden? Act doen?",
       "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
       "email": "email@email.com"
     },
     "gift": {
-      "title": "Een bijdrage aan onze wijncursus",
+      "title": "Wijncursus",
       "text": "We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven."
     },
     "faq": {
@@ -412,6 +415,10 @@
         {
           "question": "Moet ik zelf overnachting regelen?",
           "answer": "Ja. We raden aan om in de omgeving iets te boeken — Vrouwenpolder en Veere hebben mooie opties."
+        },
+        {
+          "question": "Wat als het regent?",
+          "answer": "Het feest is binnen, dus regen heeft geen invloed op het programma."
         }
       ]
     },
