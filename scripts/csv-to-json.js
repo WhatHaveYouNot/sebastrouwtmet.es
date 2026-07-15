@@ -8,7 +8,13 @@ const csvPath = join(__dirname, '../src/data/wedding-data.csv');
 const jsonPath = join(__dirname, '../src/data/wedding-data.json');
 
 const csv = readFileSync(csvPath, 'utf-8');
-const rows = parse(csv, { columns: true, skip_empty_lines: true, delimiter: ',' });
+
+const headerLine = csv.split('\n')[0];
+const semicolonCount = (headerLine.match(/;/g) || []).length;
+const commaCount = (headerLine.match(/,/g) || []).length;
+const delimiter = semicolonCount > commaCount ? ';' : ',';
+
+const rows = parse(csv, { columns: true, skip_empty_lines: true, delimiter });
 
 const types = ['weekend', 'dag', 'avond'];
 const raw = {};
