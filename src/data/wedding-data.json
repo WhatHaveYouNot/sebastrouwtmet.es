@@ -45,7 +45,7 @@
             {
               "time": "22:00",
               "title": "Einde programma",
-              "detail": "Tijd om bij te praten bij een laatste drankje."
+              "detail": ""
             }
           ]
         },
@@ -55,12 +55,12 @@
             {
               "time": "08:00",
               "title": "Ontbijt",
-              "detail": "Vrij ontbijt in de ontbijtzaal tot 11:00. De ochtend is vrij — strand, wandelen, hardlopen, helemaal aan jullie."
+              "detail": "Vrij ontbijt in de ontbijtzaal tot 11:00. De ochtend is vrij: strand, wandelen, hardlopen, helemaal aan jullie."
             },
             {
               "time": "11:45",
-              "title": "First look & corsages",
-              "detail": "Verzamelen bij de kasteelzaal voor een eerste blik op het bruidspaar. Corsages worden uitgedeeld."
+              "title": "First look",
+              "detail": "Verzamelen bij de kasteelzaal voor een eerste blik op het bruidspaar."
             },
             {
               "time": "12:00",
@@ -75,12 +75,12 @@
             {
               "time": "15:00",
               "title": "Ceremonie",
-              "detail": "De trouwceremonie in de orangerie. Begint stipt."
+              "detail": "De trouwceremonie in de orangerie."
             },
             {
               "time": "16:30",
               "title": "Borrel",
-              "detail": "Champagne en oesters in de kasteelzaal!"
+              "detail": "Champagne en oesters in de kasteelzaal"
             },
             {
               "time": "17:30",
@@ -123,8 +123,8 @@
     },
     "acts": {
       "title": "Speech houden? Act doen?",
-      "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
-      "email": "email@email.com"
+      "text": "Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
+      "email": "pris.is.onze.ceremoniemeester@gmail.com"
     },
     "gift": {
       "title": "Wijncursus",
@@ -134,43 +134,31 @@
       "items": [
         {
           "question": "Wat is de dresscode?",
-          "answer": "Op vrijdag is de dresscode informeel chic — denk aan iets leuks maar comfortabel. Op zaterdag gaan we vol sjiek-de-friemel: pak, jurk, je mooiste outfit!"
+          "answer": "Zaterdag: sjiek-de-friemel. Vrijdag: iets minder sjiek-de-friemel."
         },
         {
-          "question": "Hoe laat moet ik er zijn op vrijdag?",
-          "answer": "Aankomst is vanaf 17:00. Je wordt bij het welkomsthuisje ontvangen door onze ceremoniemeester Priscilla, die je naar je huisje begeleidt. Om 18:00 verzamelen we in de kasteelzaal."
+          "question": "Wat betekent iets minder sjiek-de-friemel?",
+          "answer": "Iets minder sjiek-de-friemel betekent voor ons een feestelijke outfit die je op zaterdag nog kunt overtreffen."
         },
         {
           "question": "Waar slaap ik?",
-          "answer": "Jullie slapen in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig. Bij aankomst vinden jullie een welkomstcadeau op bed."
-        },
-        {
-          "question": "Wat moet ik meenemen?",
-          "answer": "Comfortabele kleding voor vrijdag en zondag, je feestoutfit voor zaterdag, toiletspullen, en eventueel sportkleding als je zaterdag wilt hardlopen of wandelen. De ochtend is vrij!"
-        },
-        {
-          "question": "Is er ontbijt?",
-          "answer": "Ja! Zaterdag- en zondagochtend staat er ontbijt klaar in de ontbijtzaal. Op zaterdag tussen 08:00 en 11:00 — kom wanneer je wilt."
+          "answer": "Je slaapt in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig."
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden."
-        },
-        {
-          "question": "Kan ik mijn kinderen meenemen?",
-          "answer": "We vieren dit weekend graag met volwassenen. Mocht dit voor een uitdaging zorgen, neem contact op met Priscilla."
+          "answer": "Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden en tussendoortjes."
         },
         {
           "question": "Hoe zit het met parkeren?",
           "answer": "Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan."
         },
         {
-          "question": "Hoe laat is de ceremonie?",
-          "answer": "De ceremonie begint stipt om 15:00 op zaterdag in de orangerie. Zorg dat je op tijd bent — om 14:00 is er eerst koffie en patisserie."
+          "question": "Wat als het regent?",
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem."
         },
         {
-          "question": "Wat als het regent?",
-          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem. Alleen de vrije zaterdagochtend (strand, wandelen) is weersafhankelijk — maar die is toch al optioneel!"
+          "question": "Mag ik zelf opnames maken?",
+          "answer": "Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er op zaterdag een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon op de video zijn met een telefoon in de hand ;-)"
         }
       ]
     },
@@ -178,12 +166,12 @@
       "name": "Priscilla Been",
       "role": "Ceremoniemeester",
       "text": "Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.",
-      "email": "priscilla@example.com"
+      "email": "pris.is.onze.ceremoniemeester@gmail.com"
     },
     "rsvp": {
       "text": "Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor het weekend. Aanmelden kan via de knop hieronder.",
       "button_text": "Aanmelden",
-      "deadline": "1 augustus 2026",
+      "deadline": "15 september",
       "notion_url": "https://tally.so/r/1ANDZW"
     }
   },
@@ -256,8 +244,8 @@
     },
     "acts": {
       "title": "Speech houden? Act doen?",
-      "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
-      "email": "email@email.com"
+      "text": "Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
+      "email": "pris.is.onze.ceremoniemeester@gmail.com"
     },
     "gift": {
       "title": "Wijncursus",
@@ -267,39 +255,23 @@
       "items": [
         {
           "question": "Wat is de dresscode?",
-          "answer": "Sjiek-de-friemel! Pak, jurk, je mooiste outfit. Comfortabele schoenen zijn wel aangeraden — het terrein is deels onverhard."
-        },
-        {
-          "question": "Hoe laat moet ik er zijn?",
-          "answer": "Aankomst is om 14:00. Je wordt ontvangen in de kasteelzaal met koffie, thee en patisserie. De ceremonie begint om 15:00."
-        },
-        {
-          "question": "Hoe laat is de ceremonie?",
-          "answer": "De ceremonie begint stipt om 15:00 in de orangerie."
-        },
-        {
-          "question": "Blijf ik ook voor het feest?",
-          "answer": "Ja! Na het diner is er een pauze om even op te frissen, en om 21:15 begint het feest. Dansen tot de kleine uurtjes."
+          "answer": "Sjiek-de-friemel"
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee."
-        },
-        {
-          "question": "Kan ik mijn kinderen meenemen?",
-          "answer": "We vieren deze dag graag met volwassenen. Mocht dit lastig zijn, neem contact op met Priscilla."
+          "answer": "Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden en tussendoortjes."
         },
         {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is ruim gratis parkeren op het landgoed."
-        },
-        {
-          "question": "Moet ik zelf overnachting regelen?",
-          "answer": "Ja, er is geen overnachting op het landgoed voor daggasten. We raden aan om in de omgeving iets te boeken — Vrouwenpolder en Veere hebben mooie opties."
+          "answer": "Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan."
         },
         {
           "question": "Wat als het regent?",
-          "answer": "Geen zorgen — de ceremonie, borrel en het diner zijn allemaal binnen in de orangerie en kasteelzaal. Regen heeft geen invloed op het programma."
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem."
+        },
+        {
+          "question": "Mag ik zelf opnames maken?",
+          "answer": "Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon op de video zijn met een telefoon in de hand ;-)."
         }
       ]
     },
@@ -307,12 +279,12 @@
       "name": "Priscilla Been",
       "role": "Ceremoniemeester",
       "text": "Priscilla begeleidt de dag en houdt het programma op de rails. Ze neemt het woord op de juiste momenten en zorgt dat jij zorgeloos kunt genieten.",
-      "email": "priscilla@example.com"
+      "email": "pris.is.onze.ceremoniemeester@gmail.com"
     },
     "rsvp": {
       "text": "Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de dag. Aanmelden kan via de knop hieronder.",
       "button_text": "Aanmelden",
-      "deadline": "1 augustus 2026",
+      "deadline": "15 september",
       "notion_url": "https://tally.so/r/Y5JJ4z"
     }
   },
@@ -375,8 +347,8 @@
     },
     "acts": {
       "title": "Speech houden? Act doen?",
-      "text": "Neem even contact op met ceremoniemeester Priscilla Been — zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
-      "email": "email@email.com"
+      "text": "Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.",
+      "email": "pris.is.onze.ceremoniemeester@gmail.com"
     },
     "gift": {
       "title": "Wijncursus",
@@ -386,39 +358,31 @@
       "items": [
         {
           "question": "Wat is de dresscode?",
-          "answer": "Sjiek-de-friemel! Het is een feest — ga all out."
+          "answer": "Sjiek-de-friemel!"
         },
         {
-          "question": "Hoe laat moet ik er zijn?",
-          "answer": "Je bent twee keer welkom! Om 14:30 voor de ceremonie (via de achteringang) en om 20:45 voor het avondfeest."
+          "question": "Mag ik ook naar de ceremonie komen?",
+          "answer": "Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:30 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor het feest."
         },
         {
-          "question": "Via welke ingang kom ik binnen?",
-          "answer": "Voor de ceremonie om 14:30 kom je via de achteringang van Twistvliet. Je wordt daar ontvangen en naar je plek begeleid. Voor het avondfeest kom je via de ingang van de feestzaal."
-        },
-        {
-          "question": "Wat gebeurt er tussen de ceremonie en het feest?",
-          "answer": "Na de ceremonie nemen we even afscheid — het diner is voor de weekend- en daggasten. Om 20:45 ben je weer welkom voor het feest!"
+          "question": "Wat is de dresscode?",
+          "answer": "Sjiek-de-friemel"
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Er is geen diner voor avondgasten, maar er zijn wel hapjes en drankjes tijdens het feest. Geef eventuele allergieën door via het RSVP-formulier."
-        },
-        {
-          "question": "Kan ik mijn kinderen meenemen?",
-          "answer": "Het avondfeest is alleen voor volwassenen."
+          "answer": "Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden en tussendoortjes."
         },
         {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is ruim gratis parkeren op het landgoed."
-        },
-        {
-          "question": "Moet ik zelf overnachting regelen?",
-          "answer": "Ja. We raden aan om in de omgeving iets te boeken — Vrouwenpolder en Veere hebben mooie opties."
+          "answer": "Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan."
         },
         {
           "question": "Wat als het regent?",
-          "answer": "Het feest is binnen, dus regen heeft geen invloed op het programma."
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem."
+        },
+        {
+          "question": "Mag ik zelf opnames maken?",
+          "answer": "Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon op de video zijn met een telefoon in de hand ;-)."
         }
       ]
     },
@@ -426,12 +390,12 @@
       "name": "Priscilla Been",
       "role": "Ceremoniemeester",
       "text": "Priscilla begeleidt de avond en zorgt ervoor dat alles op rolletjes loopt. Heb je vragen over het programma? Priscilla helpt je verder.",
-      "email": "priscilla@example.com"
+      "email": "pris.is.onze.ceremoniemeester@gmail.com"
     },
     "rsvp": {
       "text": "Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de avond. Aanmelden kan via de knop hieronder.",
       "button_text": "Aanmelden",
-      "deadline": "1 augustus 2026",
+      "deadline": "15 september",
       "notion_url": "https://tally.so/r/D4xx7X"
     }
   }
