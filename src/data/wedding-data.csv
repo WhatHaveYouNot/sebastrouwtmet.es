@@ -75,7 +75,7 @@ program;day_3_2_title;Afscheid;;
 program;day_3_2_detail;Check-out, groepsafscheid en goede wensen voor de reis.;;
 acts;title;Speech houden? Act doen?;Speech houden? Act doen?;Speech houden? Act doen?
 acts;text;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.
-acts;email;pris.is.onze.ceremoniemeester@gmail.com;pris.is.onze.ceremoniemeester@gmail.com;pris.is.onze.ceremoniemeester@gmail.com
+acts;email;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com
 gift;title;Wijncursus;Wijncursus;Wijncursus
 gift;text;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang.;We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven.;We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven.
 faq;1_q;Wat is de dresscode?;Wat is de dresscode?;Wat is de dresscode?
@@ -95,7 +95,7 @@ faq;7_a;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het br
 mc;name;Priscilla Been;Priscilla Been;Priscilla Been
 mc;role;Ceremoniemeester;Ceremoniemeester;Ceremoniemeester
 mc;text;Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.;Priscilla begeleidt de dag en houdt het programma op de rails. Ze neemt het woord op de juiste momenten en zorgt dat jij zorgeloos kunt genieten.;Priscilla begeleidt de avond en zorgt ervoor dat alles op rolletjes loopt. Heb je vragen over het programma? Priscilla helpt je verder.
-mc;email;pris.is.onze.ceremoniemeester@gmail.com;pris.is.onze.ceremoniemeester@gmail.com;pris.is.onze.ceremoniemeester@gmail.com
+mc;email;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com
 rsvp;text;Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor het weekend. Aanmelden kan via de knop hieronder.;Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de dag. Aanmelden kan via de knop hieronder.;Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de avond. Aanmelden kan via de knop hieronder.
 rsvp;button_text;Aanmelden;Aanmelden;Aanmelden
 rsvp;deadline;15 september;15 september;15 september
