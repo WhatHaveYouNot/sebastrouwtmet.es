@@ -76,9 +76,10 @@ function buildFaq(sectionData) {
   const items = [];
   let i = 1;
   while (true) {
-    const question = sectionData[`${i}_q`];
+    const questionKey = `${i}_q`;
+    if (!(questionKey in sectionData)) break;
+    const question = sectionData[questionKey];
     const answer = sectionData[`${i}_a`];
-    if (!question) break;
     if (question && answer) items.push({ question, answer });
     i++;
   }

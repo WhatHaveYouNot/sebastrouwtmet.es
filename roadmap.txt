@@ -1,0 +1,25 @@
+ROADMAP — geplande wijzigingen
+================================
+
+[ ] Na 15-09-2026: sectievolgorde omdraaien
+    Reden: tegen die tijd hebben de meeste gasten al gereageerd op de RSVP
+    (deadline is 1 augustus 2026), dus wordt praktische info belangrijker
+    dan de RSVP-oproep zelf.
+
+    Wat moet er gebeuren:
+    - RSVP-sectie verder naar beneden op de pagina
+    - Programma-sectie hoger op de pagina
+    - FAQ-sectie hoger op de pagina
+
+    Huidige volgorde (sinds deze wijziging op 28-07-2026):
+    Brief -> Locatie -> Programma -> RSVP -> MC -> FAQ -> Acts -> Cadeau
+
+    Bestanden om aan te passen:
+    - src/pages/weekend.astro
+    - src/pages/dag.astro
+    - src/pages/avond.astro
+    - src/components/NavBar.astro (navItems volgorde)
+    - src/layouts/WeddingLayout.astro (navSectionIds array, voor scroll-detectie)
+
+    Let op: StickyRSVP-balk (onderaan, blijft plakken tijdens scrollen) hoeft
+    niet aangepast te worden, die is onafhankelijk van de sectievolgorde.

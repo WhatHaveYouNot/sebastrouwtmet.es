@@ -122,7 +122,7 @@ const { title, variant } = Astro.props;
       window.addEventListener('scroll', updateNavVisibility, { passive: true });
       updateNavVisibility();
 
-      const navSectionIds = ['brief', 'locatie', 'programma', 'ceremoniemeester', 'rsvp', 'faq', 'acts', 'cadeau'];
+      const navSectionIds = ['brief', 'locatie', 'programma', 'rsvp', 'ceremoniemeester', 'faq', 'acts', 'cadeau'];
 
       function setNavActive(id: string) {
         navLinks.forEach((link) => {

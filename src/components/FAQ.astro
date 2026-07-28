@@ -51,7 +51,7 @@ const { items } = Astro.props;
                   </span>
                 </button>
                 <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out">
-                  <p class="pt-4 pb-2 text-wedding-muted leading-relaxed" style="font-weight: 400;">{item.answer}</p>
+                  <p class="faq-answer pt-4 pb-2 text-wedding-muted leading-relaxed" style="font-weight: 400;" set:html={item.answer} />
                 </div>
               </div>
             );
@@ -61,6 +61,18 @@ const { items } = Astro.props;
     </div>
   </div>
 </section>
+
+<style>
+  .faq-answer :global(a) {
+    color: #C4B998;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+  }
+  .faq-answer :global(a:hover) {
+    color: #ffffff;
+  }
+</style>
 
 <script>
   document.querySelectorAll('.faq-item').forEach((item) => {

@@ -7,96 +7,101 @@ letter;text;Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk 
 location;venue_name;Landgoed Twistvliet;Landgoed Twistvliet;Landgoed Twistvliet
 location;address;Koningin Emmaweg 4, 4354 KC Vrouwenpolder;Koningin Emmaweg 4, 4354 KC Vrouwenpolder;Koningin Emmaweg 4, 4354 KC Vrouwenpolder
 location;region;Zeeland;Zeeland;Zeeland
-location;arrival_label;Aankomst vrijdag vanaf 17:00;Aankomst vanaf 14:00;Aankomst 14:30 & 20:45
-location;arrival_note;Check-in vrijdagmiddag vanaf 17:00. Om 18:00 verzamelen we in de kasteelzaal.;Koffie, thee en patisserie staan klaar. De ceremonie begint stipt om 15:00.;Je bent twee keer welkom: om 14:30 voor de ceremonie en om 20:45 voor het avondfeest.
+location;arrival_note;Check-in vrijdagmiddag vanaf 17:00. Om 18:00 proosten we op een mooi weekend in de Kasteelzaal.;Aankomst om 13:30 met koffie & patisserie.;Je bent twee keer welkom: om 14:45 voor de ceremonie en om 20:30 voor het avondfeest.
 location;maps_query;Landgoed+Twistvliet+Vrouwenpolder+Zeeland;Landgoed+Twistvliet+Vrouwenpolder+Zeeland;Landgoed+Twistvliet+Vrouwenpolder+Zeeland
 program;day_1_label;Vrijdag 30 oktober;Zaterdag 31 oktober;Zaterdag 31 oktober
-program;day_1_1_time;17:00;14:00;14:30
-program;day_1_1_title;Aankomst & inchecken;Aankomst;Aankomst ceremonie
-program;day_1_1_detail;Welkom op Landgoed Twistvliet! Check in bij je huisje en maak je klaar voor de eerste avond.;Welkom op Landgoed Twistvliet! Loop door naar de kasteelzaal.;Kom binnen via de achteringang van Twistvliet. Je wordt hier ontvangen en naar je plek begeleid.
-program;day_1_2_time;18:00;14:00;15:00
-program;day_1_2_title;Welkom met champagne;Koffie, thee & patisserie;Ceremonie
-program;day_1_2_detail;Verzamelen in de kasteelzaal voor een glas (alcoholvrije) champagne.;In de kasteelzaal.;De trouwceremonie in de orangerie.
-program;day_1_3_time;;15:00;16:30
-program;day_1_3_title;;Ceremonie;Tot straks!
-program;day_1_3_detail;;De trouwceremonie in de orangerie. Begint stipt.;Na de ceremonie nemen we even afscheid — we zien jullie vanavond terug voor het feest!
-program;day_1_4_time;18:30;16:30;20:45
-program;day_1_4_title;Walking diner;Borrel;Aankomst avondfeest
-program;day_1_4_detail;Informeel diner in festivalstijl in de orangerie.;Champagne en oesters in de kasteelzaal!;Welkom terug! Receptie bij de ingang van de feestzaal.
-program;day_1_5_time;20:00;17:30;21:15
-program;day_1_5_title;Avondprogramma;Diner;Feest!
-program;day_1_5_detail;Een avond vol verrassingen in de kasteelzaal.;In de orangerie.;Dansen tot de kleine uurtjes.
-program;day_1_6_time;22:00;20:00;00:30
-program;day_1_6_title;Einde programma;Pauze;Einde feest
-program;day_1_6_detail;;Even opfrissen voordat het feest begint.;
-program;day_1_7_time;;21:15;
+program;day_1_1_time;17:00;13:30;14:45
+program;day_1_1_title;Aankomst & inchecken;Aankomst;Ceremonie
+program;day_1_1_detail;Welkom op Landgoed Twistvliet! Check in bij je huisje en maak je klaar voor de eerste avond.;Welkom op Landgoed Twistvliet! Loop door naar de kasteelzaal.;Wees welkom op onze ceremonie, als je het leuk vindt om dit bij te wonen.
+program;day_1_2_time;18:00;13:30;16:15
+program;day_1_2_title;Welkom met champagne;Koffie, thee & patisserie;Einde ceremonie
+program;day_1_2_detail;In de kasteelzaal proosten we samen op een mooi weekend met een glas bubbels.;In de kasteelzaal.;We verwachten dat de ceremonie tot 16:15 duurt. Daarna zien we je graag om 20:30 terug voor het feest.
+program;day_1_3_time;;15:00;20:30
+program;day_1_3_title;;Ceremonie;Receptie
+program;day_1_3_detail;;Trouwceremonie in de orangerie;We ontvangen jullie graag tijdens de receptie weer op Landgoed Twistvliet
+program;day_1_4_time;18:30;16:15;21:00
+program;day_1_4_title;Walking diner;Borrel;Feest!
+program;day_1_4_detail;Informeel diner in de orangerie;Oesters & bubbels om te vieren dat wij getrouwd zijn;Het dak eraf, de tent in de fik en gas op die lolly. Los!
+program;day_1_5_time;20:00;17:30;00:30
+program;day_1_5_title;Avondprogramma;Diner;Einde feest
+program;day_1_5_detail;Borrelavond in de kasteelzaal;Formeel diner in de orangerie;
+program;day_1_6_time;22:00;20:30;
+program;day_1_6_title;Einde programma;Aankomst avondgasten & korte receptie;
+program;day_1_6_detail;;;
+program;day_1_7_time;;21:00;
 program;day_1_7_title;;Feest!;
-program;day_1_7_detail;;Dansen tot de kleine uurtjes.;
+program;day_1_7_detail;;Het dak eraf, de tent in de fik en gas op die lolly. Los!;
 program;day_1_8_time;;00:30;
 program;day_1_8_title;;Einde feest;
 program;day_1_8_detail;;;
 program;day_2_label;Zaterdag 31 oktober;;
 program;day_2_1_time;08:00;;
 program;day_2_1_title;Ontbijt;;
-program;day_2_1_detail;Vrij ontbijt in de ontbijtzaal tot 11:00. De ochtend is vrij: strand, wandelen, hardlopen, helemaal aan jullie.;;
+program;day_2_1_detail;Tot 11 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan!;;
 program;day_2_2_time;11:45;;
 program;day_2_2_title;First look;;
-program;day_2_2_detail;Verzamelen bij de kasteelzaal voor een eerste blik op het bruidspaar.;;
+program;day_2_2_detail;De officiële trouwdag starten we met een first look in de kasteelzaal;;
 program;day_2_3_time;12:00;;
 program;day_2_3_title;Lunch;;
-program;day_2_3_detail;Samen lunchen in de kasteelzaal.;;
-program;day_2_4_time;14:00;;
+program;day_2_3_detail;Aansluitend aan de first look is er een lunch;;
+program;day_2_4_time;13:30;;
 program;day_2_4_title;Koffie, thee & patisserie;;
-program;day_2_4_detail;In de kasteelzaal, samen met de daggasten die dan aankomen.;;
+program;day_2_4_detail;Samen met de daggasten;;
 program;day_2_5_time;15:00;;
 program;day_2_5_title;Ceremonie;;
-program;day_2_5_detail;De trouwceremonie in de orangerie.;;
-program;day_2_6_time;16:30;;
+program;day_2_5_detail;Trouwceremonie in de orangerie;;
+program;day_2_6_time;16:15;;
 program;day_2_6_title;Borrel;;
-program;day_2_6_detail;Champagne en oesters in de kasteelzaal;;
+program;day_2_6_detail;Oesters & bubbels om te vieren dat wij getrouwd zijn;;
 program;day_2_7_time;17:30;;
 program;day_2_7_title;Diner;;
-program;day_2_7_detail;In de orangerie.;;
-program;day_2_8_time;20:00;;
-program;day_2_8_title;Pauze;;
-program;day_2_8_detail;Even opfrissen in je huisje of doorlopen naar de feestzaal.;;
-program;day_2_9_time;21:15;;
+program;day_2_7_detail;Formeel diner in de orangerie;;
+program;day_2_8_time;20:30;;
+program;day_2_8_title;Aankomst avondgasten & korte receptie;;
+program;day_2_8_detail;;;
+program;day_2_9_time;21:00;;
 program;day_2_9_title;Feest!;;
-program;day_2_9_detail;Dansen tot de kleine uurtjes.;;
+program;day_2_9_detail;Het dak eraf, de tent in de fik en gas op die lolly. Los!;;
 program;day_2_10_time;00:30;;
 program;day_2_10_title;Einde feest;;
-program;day_2_10_detail;;;
+program;day_2_10_detail;Dronken je bed weer in;;
 program;day_3_label;Zondag 1 november;;
-program;day_3_1_time;08:30;;
-program;day_3_1_title;Ontbijt;;
-program;day_3_1_detail;Laatste gemeenschappelijk ontbijt.;;
-program;day_3_2_time;10:00;;
-program;day_3_2_title;Afscheid;;
-program;day_3_2_detail;Check-out, groepsafscheid en goede wensen voor de reis.;;
+program;day_3_1_time;09:00;;
+program;day_3_1_title;Gezamenlijk ontbijt & afscheid;;
+program;day_3_1_detail;Check voor het ontbijt uit en zet je spullen alvast in de auto.;;
+program;day_3_2_time;;;
+program;day_3_2_title;;;
+program;day_3_2_detail;;;
 acts;title;Speech houden? Act doen?;Speech houden? Act doen?;Speech houden? Act doen?
 acts;text;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.
 acts;email;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com
 gift;title;Wijncursus;Wijncursus;Wijncursus
-gift;text;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang.;We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven.;We volgen graag samen de SDEN-3 wijncursus — samen zuipen tot we kruipen, maar dan wel met verstand. Een bijdrage daarvoor is de mooiste gift die je ons kunt geven.
+gift;text;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang van het feest.;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang van het feest.;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang van het feest.
 faq;1_q;Wat is de dresscode?;Wat is de dresscode?;Wat is de dresscode?
-faq;1_a;Zaterdag: sjiek-de-friemel. Vrijdag: iets minder sjiek-de-friemel.;Sjiek-de-friemel;Sjiek-de-friemel!
+faq;1_a;Zaterdag: sjiek-de-friemel. Vrijdag: iets minder sjiek-de-friemel.;Sjiek-de-friemel;Sjiek-de-friemel
 faq;2_q;Wat betekent iets minder sjiek-de-friemel?;Hoe zit het met dieetwensen?;Mag ik ook naar de ceremonie komen?
-faq;2_a;Iets minder sjiek-de-friemel betekent voor ons een feestelijke outfit die je op zaterdag nog kunt overtreffen.;Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:30 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor het feest.
-faq;3_q;Waar slaap ik?;Hoe zit het met parkeren?;Wat is de dresscode?
-faq;3_a;Je slaapt in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig.;Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan.;Sjiek-de-friemel
+faq;2_a;Iets minder sjiek-de-friemel betekent voor ons een feestelijke outfit die je op zaterdag nog kunt overtreffen.;Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:45 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor het feest.
+faq;3_q;Waar slaap ik?;Hoe zit het met parkeren?;
+faq;3_a;Je slaapt in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig.;Er is ruim gratis parkeren op het landgoed. Je auto kan de hele dag blijven staan.;
 faq;4_q;Hoe zit het met dieetwensen?;Wat als het regent?;Hoe zit het met dieetwensen?
-faq;4_a;Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem.;Geef je dieetwensen of allergieën door via het RSVP-formulier. De catering houdt hier rekening mee bij alle maaltijden en tussendoortjes.
+faq;4_a;Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem.;Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.
 faq;5_q;Hoe zit het met parkeren?;Mag ik zelf opnames maken?;Hoe zit het met parkeren?
-faq;5_a;Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan.;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon op de video zijn met een telefoon in de hand ;-).";Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan.
+faq;5_a;Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan.;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-).";Er is ruim gratis parkeren op het landgoed. Je auto kan de hele dag blijven staan.
 faq;6_q;Wat als het regent?;;Wat als het regent?
 faq;6_a;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem.;;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem.
 faq;7_q;Mag ik zelf opnames maken?;;Mag ik zelf opnames maken?
-faq;7_a;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er op zaterdag een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon op de video zijn met een telefoon in de hand ;-)";;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon op de video zijn met een telefoon in de hand ;-)."
+faq;7_a;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er op zaterdag een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)";;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)."
+faq;8_q;Wat is jullie kadotip?;Wat is jullie kadotip?;Wat is jullie kadotip?
+faq;8_a;Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>.;Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>.;Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>.
+faq;9_q;Wie is de ceremoniemeester?;Wie is de ceremoniemeester?;Wie is de ceremoniemeester?
+faq;9_a;Priscilla Been. Zie ook <a href='#ceremoniemeester'>Ceremoniemeester</a>.;Priscilla Been. Zie ook <a href='#ceremoniemeester'>Ceremoniemeester</a>.;Priscilla Been. Zie ook <a href='#ceremoniemeester'>Ceremoniemeester</a>.
+faq;10_q;Mag ik een act doen of speech houden?;Mag ik een act doen of speech houden?;Mag ik een act doen of speech houden?
+faq;10_a;Zie <a href='#acts'>speeches & acts</a>.;Zie <a href='#acts'>speeches & acts</a>.;Zie <a href='#acts'>speeches & acts</a>.
 mc;name;Priscilla Been;Priscilla Been;Priscilla Been
 mc;role;Ceremoniemeester;Ceremoniemeester;Ceremoniemeester
-mc;text;Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.;Priscilla begeleidt de dag en houdt het programma op de rails. Ze neemt het woord op de juiste momenten en zorgt dat jij zorgeloos kunt genieten.;Priscilla begeleidt de avond en zorgt ervoor dat alles op rolletjes loopt. Heb je vragen over het programma? Priscilla helpt je verder.
+mc;text;Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.;Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van de dag. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.;Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van de dag. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.
 mc;email;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com
-rsvp;text;Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor het weekend. Aanmelden kan via de knop hieronder.;Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de dag. Aanmelden kan via de knop hieronder.;Laat ons zo snel mogelijk weten of je erbij bent, zodat we alles goed kunnen regelen voor de avond. Aanmelden kan via de knop hieronder.
+rsvp;text;Laat ons zo snel mogelijk weten of jij er ook bij bent. Aanmelden kan via de knop hieronder.;Laat ons zo snel mogelijk weten of jij er ook bij bent. Aanmelden kan via de knop hieronder.;Laat ons zo snel mogelijk weten of jij er ook bij bent. Aanmelden kan via de knop hieronder.
 rsvp;button_text;Aanmelden;Aanmelden;Aanmelden
 rsvp;deadline;15 september;15 september;15 september
 rsvp;notion_url;https://tally.so/r/1ANDZW;https://tally.so/r/Y5JJ4z;https://tally.so/r/D4xx7X
