@@ -29,22 +29,22 @@
             {
               "time": "18:00",
               "title": "Welkom met champagne",
-              "detail": "In de kasteelzaal proosten we samen op een mooi weekend met een glas bubbels."
+              "detail": "In de Kasteelzaal proosten we samen op een mooi weekend met een glas bubbels."
             },
             {
               "time": "18:30",
               "title": "Walking diner",
-              "detail": "Informeel diner in de orangerie"
+              "detail": "Informeel diner in de Orangerie"
             },
             {
               "time": "20:00",
               "title": "Avondprogramma",
-              "detail": "Borrelavond in de kasteelzaal"
+              "detail": "Borrelavond in de Kasteelzaal"
             },
             {
               "time": "22:00",
-              "title": "Einde programma",
-              "detail": ""
+              "title": "Eind programma",
+              "detail": "Tot sinas!"
             }
           ]
         },
@@ -54,12 +54,12 @@
             {
               "time": "08:00",
               "title": "Ontbijt",
-              "detail": "Tot 11 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan!"
+              "detail": "Tot 10 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan!"
             },
             {
               "time": "11:45",
               "title": "First look",
-              "detail": "De officiële trouwdag starten we met een first look in de kasteelzaal"
+              "detail": "De officiële trouwdag starten we in de Kasteelzaal."
             },
             {
               "time": "12:00",
@@ -68,13 +68,13 @@
             },
             {
               "time": "13:30",
-              "title": "Koffie, thee & patisserie",
+              "title": "Koffie, thee & pastries",
               "detail": "Samen met de daggasten"
             },
             {
               "time": "15:00",
               "title": "Ceremonie",
-              "detail": "Trouwceremonie in de orangerie"
+              "detail": "Trouwceremonie in de Orangerie"
             },
             {
               "time": "16:15",
@@ -84,17 +84,17 @@
             {
               "time": "17:30",
               "title": "Diner",
-              "detail": "Formeel diner in de orangerie"
+              "detail": "Formeel diner in de Orangerie"
             },
             {
               "time": "20:30",
-              "title": "Aankomst avondgasten & korte receptie",
+              "title": "Aankomst avondgasten & receptie",
               "detail": ""
             },
             {
               "time": "21:00",
-              "title": "Feest!",
-              "detail": "Het dak eraf, de tent in de fik en gas op die lolly. Los!"
+              "title": "Feest",
+              "detail": "De dansvloer wacht!"
             },
             {
               "time": "00:30",
@@ -122,7 +122,7 @@
     },
     "gift": {
       "title": "Wijncursus",
-      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang van het feest."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
     },
     "faq": {
       "items": [
@@ -144,11 +144,11 @@
         },
         {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is ruim gratis parkeren op het landgoed. Je auto kan het hele weekend blijven staan."
+          "answer": "Er is voldoende gratis parkeerplek op het landgoed. Je auto kan het hele weekend blijven staan."
         },
         {
           "question": "Wat als het regent?",
-          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem."
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om droog van je huisje naar de binnenlocatie te lopen."
         },
         {
           "question": "Mag ik zelf opnames maken?",
@@ -160,11 +160,11 @@
         },
         {
           "question": "Wie is de ceremoniemeester?",
-          "answer": "Priscilla Been. Zie ook <a href='#ceremoniemeester'>Ceremoniemeester</a>."
+          "answer": "Onze ceremoniemeester is Priscilla Been. Zie ook <a href='#ceremoniemeester'>ceremoniemeester</a>."
         },
         {
           "question": "Mag ik een act doen of speech houden?",
-          "answer": "Zie <a href='#acts'>speeches & acts</a>."
+          "answer": "Tuurlijk! Zie voor meer informatie <a href='#acts'>speeches & acts</a>."
         }
       ]
     },
@@ -195,7 +195,7 @@
       "venue_name": "Landgoed Twistvliet",
       "address": "Koningin Emmaweg 4, 4354 KC Vrouwenpolder",
       "region": "Zeeland",
-      "arrival_note": "Aankomst om 13:30 met koffie & patisserie.",
+      "arrival_note": "Aankomst om 13:30 met koffie & pastries.",
       "maps_query": "Landgoed+Twistvliet+Vrouwenpolder+Zeeland"
     },
     "program": {
@@ -205,18 +205,13 @@
           "items": [
             {
               "time": "13:30",
-              "title": "Aankomst",
-              "detail": "Welkom op Landgoed Twistvliet! Loop door naar de kasteelzaal."
-            },
-            {
-              "time": "13:30",
-              "title": "Koffie, thee & patisserie",
-              "detail": "In de kasteelzaal."
+              "title": "Aankomst met koffie, thee en pastries",
+              "detail": "Welkom op Landgoed Twistvliet! We zien elkaar in de Kasteelzaal."
             },
             {
               "time": "15:00",
               "title": "Ceremonie",
-              "detail": "Trouwceremonie in de orangerie"
+              "detail": "Trouwceremonie in de Orangerie"
             },
             {
               "time": "16:15",
@@ -226,17 +221,17 @@
             {
               "time": "17:30",
               "title": "Diner",
-              "detail": "Formeel diner in de orangerie"
+              "detail": "Formeel diner in de Orangerie"
             },
             {
               "time": "20:30",
-              "title": "Aankomst avondgasten & korte receptie",
+              "title": "Aankomst avondgasten & receptie",
               "detail": ""
             },
             {
               "time": "21:00",
-              "title": "Feest!",
-              "detail": "Het dak eraf, de tent in de fik en gas op die lolly. Los!"
+              "title": "Feest",
+              "detail": "De dansvloer wacht!"
             },
             {
               "time": "00:30",
@@ -254,7 +249,7 @@
     },
     "gift": {
       "title": "Wijncursus",
-      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang van het feest."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
     },
     "faq": {
       "items": [
@@ -268,11 +263,11 @@
         },
         {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is ruim gratis parkeren op het landgoed. Je auto kan de hele dag blijven staan."
+          "answer": "Er is voldoende gratis parkeerplek op het landgoed. Je auto kan de hele dag blijven staan."
         },
         {
           "question": "Wat als het regent?",
-          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem."
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om droog van je auto naar de binnenlocatie te lopen."
         },
         {
           "question": "Mag ik zelf opnames maken?",
@@ -284,11 +279,11 @@
         },
         {
           "question": "Wie is de ceremoniemeester?",
-          "answer": "Priscilla Been. Zie ook <a href='#ceremoniemeester'>Ceremoniemeester</a>."
+          "answer": "Onze ceremoniemeester is Priscilla Been. Zie ook <a href='#ceremoniemeester'>ceremoniemeester</a>."
         },
         {
           "question": "Mag ik een act doen of speech houden?",
-          "answer": "Zie <a href='#acts'>speeches & acts</a>."
+          "answer": "Tuurlijk! Zie voor meer informatie <a href='#acts'>speeches & acts</a>."
         }
       ]
     },
@@ -330,22 +325,22 @@
             {
               "time": "14:45",
               "title": "Ceremonie",
-              "detail": "Wees welkom op onze ceremonie, als je het leuk vindt om dit bij te wonen."
+              "detail": "We zouden het leuk vinden als je bij de ceremonie aanwezig bent."
             },
             {
               "time": "16:15",
               "title": "Einde ceremonie",
-              "detail": "We verwachten dat de ceremonie tot 16:15 duurt. Daarna zien we je graag om 20:30 terug voor het feest."
+              "detail": "We verwachten dat de ceremonie tot 16:15 duurt. Daarna zien we je graag om 20:30 terug voor de receptie en het feest."
             },
             {
               "time": "20:30",
               "title": "Receptie",
-              "detail": "We ontvangen jullie graag tijdens de receptie weer op Landgoed Twistvliet"
+              "detail": "We ontvangen jullie graag weer tijdens de receptie op Landgoed Twistvliet."
             },
             {
               "time": "21:00",
-              "title": "Feest!",
-              "detail": "Het dak eraf, de tent in de fik en gas op die lolly. Los!"
+              "title": "Feest",
+              "detail": "De dansvloer wacht!"
             },
             {
               "time": "00:30",
@@ -363,7 +358,7 @@
     },
     "gift": {
       "title": "Wijncursus",
-      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt hem achterlaten in de cadeaubox bij de ingang van het feest."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
     },
     "faq": {
       "items": [
@@ -373,7 +368,7 @@
         },
         {
           "question": "Mag ik ook naar de ceremonie komen?",
-          "answer": "Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:45 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor het feest."
+          "answer": "Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:45 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor de receptie en het feest."
         },
         {
           "question": "Hoe zit het met dieetwensen?",
@@ -381,11 +376,11 @@
         },
         {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is ruim gratis parkeren op het landgoed. Je auto kan de hele dag blijven staan."
+          "answer": "Er is voldoende gratis parkeerplek op het landgoed."
         },
         {
           "question": "Wat als het regent?",
-          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de kasteelzaal en orangerie, dus regen is geen probleem."
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om van de parkeerplaats naar de ingang te lopen."
         },
         {
           "question": "Mag ik zelf opnames maken?",
@@ -397,11 +392,11 @@
         },
         {
           "question": "Wie is de ceremoniemeester?",
-          "answer": "Priscilla Been. Zie ook <a href='#ceremoniemeester'>Ceremoniemeester</a>."
+          "answer": "Onze ceremoniemeester is Priscilla Been. Zie ook <a href='#ceremoniemeester'>ceremoniemeester</a>."
         },
         {
           "question": "Mag ik een act doen of speech houden?",
-          "answer": "Zie <a href='#acts'>speeches & acts</a>."
+          "answer": "Tuurlijk! Zie voor meer informatie <a href='#acts'>speeches & acts</a>."
         }
       ]
     },
