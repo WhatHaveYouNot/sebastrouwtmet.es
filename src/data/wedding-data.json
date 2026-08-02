@@ -34,17 +34,17 @@
             {
               "time": "18:30",
               "title": "Walking diner",
-              "detail": "Informeel diner in de Orangerie"
+              "detail": "Informeel diner in de Orangerie."
             },
             {
               "time": "20:00",
               "title": "Avondprogramma",
-              "detail": "Borrelavond in de Kasteelzaal"
+              "detail": "Borrelavond in de Kasteelzaal."
             },
             {
               "time": "22:00",
               "title": "Eind programma",
-              "detail": "Tot sinas!"
+              "detail": "Tot sinas."
             }
           ]
         },
@@ -54,7 +54,7 @@
             {
               "time": "08:00",
               "title": "Ontbijt",
-              "detail": "Tot 10 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan!"
+              "detail": "Tot 10 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan."
             },
             {
               "time": "11:45",
@@ -64,32 +64,32 @@
             {
               "time": "12:00",
               "title": "Lunch",
-              "detail": "Aansluitend aan de first look is er een lunch"
+              "detail": "Aansluitend aan de first look is er een lunch."
             },
             {
               "time": "13:30",
               "title": "Koffie, thee & pastries",
-              "detail": "Samen met de daggasten"
+              "detail": "Samen met de daggasten."
             },
             {
               "time": "15:00",
               "title": "Ceremonie",
-              "detail": "Trouwceremonie in de Orangerie"
+              "detail": "Trouwceremonie in de Orangerie."
             },
             {
               "time": "16:15",
               "title": "Borrel",
-              "detail": "Oesters & bubbels om te vieren dat wij getrouwd zijn"
+              "detail": "Oesters & bubbels om te vieren dat wij getrouwd zijn."
             },
             {
               "time": "17:30",
               "title": "Diner",
-              "detail": "Formeel diner in de Orangerie"
+              "detail": "Formeel diner in de Orangerie."
             },
             {
               "time": "20:30",
               "title": "Aankomst avondgasten & receptie",
-              "detail": ""
+              "detail": "De bar is geopend en we beginnen de feestavond met een receptie."
             },
             {
               "time": "21:00",
@@ -99,7 +99,7 @@
             {
               "time": "00:30",
               "title": "Einde feest",
-              "detail": "Dronken je bed weer in"
+              "detail": "Dronken je bed weer in."
             }
           ]
         },
@@ -122,7 +122,7 @@
     },
     "gift": {
       "title": "Wijncursus",
-      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste cadeau dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
     },
     "faq": {
       "items": [
@@ -140,7 +140,7 @@
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
+          "answer": "Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
         },
         {
           "question": "Hoe zit het met parkeren?",
@@ -155,7 +155,7 @@
           "answer": "Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er op zaterdag een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)"
         },
         {
-          "question": "Wat is jullie kadotip?",
+          "question": "Wat is jullie cadeautip?",
           "answer": "Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>."
         },
         {
@@ -195,7 +195,7 @@
       "venue_name": "Landgoed Twistvliet",
       "address": "Koningin Emmaweg 4, 4354 KC Vrouwenpolder",
       "region": "Zeeland",
-      "arrival_note": "Aankomst om 13:30 met koffie & pastries.",
+      "arrival_note": "We ontvangen jullie graag om 13:30 op Landgoed Twistvliet met koffie & pastries.",
       "maps_query": "Landgoed+Twistvliet+Vrouwenpolder+Zeeland"
     },
     "program": {
@@ -211,22 +211,22 @@
             {
               "time": "15:00",
               "title": "Ceremonie",
-              "detail": "Trouwceremonie in de Orangerie"
+              "detail": "Trouwceremonie in de Orangerie."
             },
             {
               "time": "16:15",
               "title": "Borrel",
-              "detail": "Oesters & bubbels om te vieren dat wij getrouwd zijn"
+              "detail": "Oesters & bubbels om te vieren dat wij getrouwd zijn."
             },
             {
               "time": "17:30",
               "title": "Diner",
-              "detail": "Formeel diner in de Orangerie"
+              "detail": "Formeel diner in de Orangerie."
             },
             {
               "time": "20:30",
               "title": "Aankomst avondgasten & receptie",
-              "detail": ""
+              "detail": "De bar is geopend en we beginnen de feestavond met een receptie."
             },
             {
               "time": "21:00",
@@ -236,7 +236,7 @@
             {
               "time": "00:30",
               "title": "Einde feest",
-              "detail": ""
+              "detail": "Bedankt voor deze onvergetelijke dag."
             }
           ]
         }
@@ -249,7 +249,7 @@
     },
     "gift": {
       "title": "Wijncursus",
-      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste cadeau dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
     },
     "faq": {
       "items": [
@@ -259,7 +259,7 @@
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
+          "answer": "Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
         },
         {
           "question": "Hoe zit het met parkeren?",
@@ -274,7 +274,7 @@
           "answer": "Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)."
         },
         {
-          "question": "Wat is jullie kadotip?",
+          "question": "Wat is jullie cadeautip?",
           "answer": "Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>."
         },
         {
@@ -314,7 +314,7 @@
       "venue_name": "Landgoed Twistvliet",
       "address": "Koningin Emmaweg 4, 4354 KC Vrouwenpolder",
       "region": "Zeeland",
-      "arrival_note": "Je bent twee keer welkom: om 14:45 voor de ceremonie en om 20:30 voor het avondfeest.",
+      "arrival_note": "We heten je graag welkom op Landgoed Twistvliet voor zowel de ceremonie (14:45), als het feest (20:30).",
       "maps_query": "Landgoed+Twistvliet+Vrouwenpolder+Zeeland"
     },
     "program": {
@@ -335,7 +335,7 @@
             {
               "time": "20:30",
               "title": "Receptie",
-              "detail": "We ontvangen jullie graag weer tijdens de receptie op Landgoed Twistvliet."
+              "detail": "We ontvangen jullie graag tijdens de receptie op Landgoed Twistvliet."
             },
             {
               "time": "21:00",
@@ -345,7 +345,7 @@
             {
               "time": "00:30",
               "title": "Einde feest",
-              "detail": ""
+              "detail": "Bedankt voor deze onvergetelijke dag."
             }
           ]
         }
@@ -358,7 +358,7 @@
     },
     "gift": {
       "title": "Wijncursus",
-      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
+      "text": "We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste cadeau dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest."
     },
     "faq": {
       "items": [
@@ -372,7 +372,7 @@
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
+          "answer": "Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
         },
         {
           "question": "Hoe zit het met parkeren?",
@@ -380,14 +380,14 @@
         },
         {
           "question": "Wat als het regent?",
-          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om van de parkeerplaats naar de ingang te lopen."
+          "answer": "Alle hoofdmomenten (ontvangst, ceremonie, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om van de parkeerplaats naar de ingang te lopen."
         },
         {
           "question": "Mag ik zelf opnames maken?",
           "answer": "Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)."
         },
         {
-          "question": "Wat is jullie kadotip?",
+          "question": "Wat is jullie cadeautip?",
           "answer": "Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>."
         },
         {

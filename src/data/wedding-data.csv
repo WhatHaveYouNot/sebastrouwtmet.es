@@ -3,11 +3,11 @@ header;name_1;Sebastiaan;Sebastiaan;Sebastiaan
 header;name_2;Esmeralda;Esmeralda;Esmeralda
 header;date;30 oktober — 1 november 2026;31 oktober 2026;31 oktober 2026
 header;subtitle;;;
-letter;text;Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in het Zeeland waar we zo van houden. We kijken er ontzettend naar uit, en horen graag of jullie erbij kunnen zijn op deze bijzondere dag.\n\nMet liefde,;Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in het Zeeland waar we zo van houden. We kijken er ontzettend naar uit, en horen graag of jullie erbij kunnen zijn op deze bijzondere dag.\n\nMet liefde,;Lieve familie en vrienden,\n\nWat fijn en bijzonder om ons huwelijk samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in het Zeeland waar we zo van houden. We kijken er ontzettend naar uit, en horen graag of jullie erbij kunnen zijn op deze bijzondere dag.\n\nMet liefde,
+letter;text;Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs. Nu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder. Deze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We horen graag of je erbij kunt zijn. Op naar een fantastisch weekend!\n\nLiefs,;Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs. Nu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder. Deze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We horen graag of je erbij kunt zijn. Op naar een fantastische dag!\n\nLiefs,;Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs. Nu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jullie te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder. Deze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We horen graag of je erbij kunt zijn. Op naar een fantastische dag!\n\nLiefs,
 location;venue_name;Landgoed Twistvliet;Landgoed Twistvliet;Landgoed Twistvliet
 location;address;Koningin Emmaweg 4, 4354 KC Vrouwenpolder;Koningin Emmaweg 4, 4354 KC Vrouwenpolder;Koningin Emmaweg 4, 4354 KC Vrouwenpolder
 location;region;Zeeland;Zeeland;Zeeland
-location;arrival_note;Check-in vrijdagmiddag vanaf 17:00. Om 18:00 proosten we op een mooi weekend in de Kasteelzaal.;Aankomst om 13:30 met koffie & pastries.;Je bent twee keer welkom: om 14:45 voor de ceremonie en om 20:30 voor het avondfeest.
+location;arrival_note;Check-in vrijdagmiddag vanaf 17:00. Om 18:00 proosten we op een mooi weekend in de Kasteelzaal.;We ontvangen jullie graag om 13:30 op Landgoed Twistvliet met koffie & pastries.;We heten je graag welkom op Landgoed Twistvliet voor zowel de ceremonie (14:45), als het feest (20:30).
 location;maps_query;Landgoed+Twistvliet+Vrouwenpolder+Zeeland;Landgoed+Twistvliet+Vrouwenpolder+Zeeland;Landgoed+Twistvliet+Vrouwenpolder+Zeeland
 program;day_1_label;Vrijdag 30 oktober;Zaterdag 31 oktober;Zaterdag 31 oktober
 program;day_1_1_time;17:00;13:30;14:45
@@ -18,53 +18,53 @@ program;day_1_2_title;Welkom met champagne;;Einde ceremonie
 program;day_1_2_detail;In de Kasteelzaal proosten we samen op een mooi weekend met een glas bubbels.;;We verwachten dat de ceremonie tot 16:15 duurt. Daarna zien we je graag om 20:30 terug voor de receptie en het feest.
 program;day_1_3_time;;15:00;20:30
 program;day_1_3_title;;Ceremonie;Receptie
-program;day_1_3_detail;;Trouwceremonie in de Orangerie;We ontvangen jullie graag weer tijdens de receptie op Landgoed Twistvliet.
+program;day_1_3_detail;;Trouwceremonie in de Orangerie.;We ontvangen jullie graag tijdens de receptie op Landgoed Twistvliet.
 program;day_1_4_time;18:30;16:15;21:00
 program;day_1_4_title;Walking diner;Borrel;Feest
-program;day_1_4_detail;Informeel diner in de Orangerie;Oesters & bubbels om te vieren dat wij getrouwd zijn;De dansvloer wacht!
+program;day_1_4_detail;Informeel diner in de Orangerie.;Oesters & bubbels om te vieren dat wij getrouwd zijn.;De dansvloer wacht!
 program;day_1_5_time;20:00;17:30;00:30
 program;day_1_5_title;Avondprogramma;Diner;Einde feest
-program;day_1_5_detail;Borrelavond in de Kasteelzaal;Formeel diner in de Orangerie;
+program;day_1_5_detail;Borrelavond in de Kasteelzaal.;Formeel diner in de Orangerie.;Bedankt voor deze onvergetelijke dag.
 program;day_1_6_time;22:00;20:30;
 program;day_1_6_title;Eind programma;Aankomst avondgasten & receptie;
-program;day_1_6_detail;Tot sinas!;;
+program;day_1_6_detail;Tot sinas.;De bar is geopend en we beginnen de feestavond met een receptie.;
 program;day_1_7_time;;21:00;
 program;day_1_7_title;;Feest;
 program;day_1_7_detail;;De dansvloer wacht!;
 program;day_1_8_time;;00:30;
 program;day_1_8_title;;Einde feest;
-program;day_1_8_detail;;;
+program;day_1_8_detail;;Bedankt voor deze onvergetelijke dag.;
 program;day_2_label;Zaterdag 31 oktober;;
 program;day_2_1_time;08:00;;
 program;day_2_1_title;Ontbijt;;
-program;day_2_1_detail;Tot 10 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan!;;
+program;day_2_1_detail;Tot 10 uur kun je op eigen gelegenheid ontbijten in de ontbijtzaal. De rest van de ochtend staat niks gepland. Je kunt in de omgeving mooi wandelen en hardlopen, voel je vrij om erop uit te gaan.;;
 program;day_2_2_time;11:45;;
 program;day_2_2_title;First look;;
 program;day_2_2_detail;De officiële trouwdag starten we in de Kasteelzaal.;;
 program;day_2_3_time;12:00;;
 program;day_2_3_title;Lunch;;
-program;day_2_3_detail;Aansluitend aan de first look is er een lunch;;
+program;day_2_3_detail;Aansluitend aan de first look is er een lunch.;;
 program;day_2_4_time;13:30;;
 program;day_2_4_title;Koffie, thee & pastries;;
-program;day_2_4_detail;Samen met de daggasten;;
+program;day_2_4_detail;Samen met de daggasten.;;
 program;day_2_5_time;15:00;;
 program;day_2_5_title;Ceremonie;;
-program;day_2_5_detail;Trouwceremonie in de Orangerie;;
+program;day_2_5_detail;Trouwceremonie in de Orangerie.;;
 program;day_2_6_time;16:15;;
 program;day_2_6_title;Borrel;;
-program;day_2_6_detail;Oesters & bubbels om te vieren dat wij getrouwd zijn;;
+program;day_2_6_detail;Oesters & bubbels om te vieren dat wij getrouwd zijn.;;
 program;day_2_7_time;17:30;;
 program;day_2_7_title;Diner;;
-program;day_2_7_detail;Formeel diner in de Orangerie;;
+program;day_2_7_detail;Formeel diner in de Orangerie.;;
 program;day_2_8_time;20:30;;
 program;day_2_8_title;Aankomst avondgasten & receptie;;
-program;day_2_8_detail;;;
+program;day_2_8_detail;De bar is geopend en we beginnen de feestavond met een receptie.;;
 program;day_2_9_time;21:00;;
 program;day_2_9_title;Feest;;
 program;day_2_9_detail;De dansvloer wacht!;;
 program;day_2_10_time;00:30;;
 program;day_2_10_title;Einde feest;;
-program;day_2_10_detail;Dronken je bed weer in;;
+program;day_2_10_detail;Dronken je bed weer in.;;
 program;day_3_label;Zondag 1 november;;
 program;day_3_1_time;09:00;;
 program;day_3_1_title;Gezamenlijk ontbijt & afscheid;;
@@ -76,22 +76,22 @@ acts;title;Speech houden? Act doen?;Speech houden? Act doen?;Speech houden? Act 
 acts;text;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.;Neem even contact op met ceremoniemeester Priscilla Been. Zij weet precies wat we wel en niet willen en wanneer hier ruimte voor is.
 acts;email;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com;pris.is.ceremoniemeester@gmail.com
 gift;title;Wijncursus;Wijncursus;Wijncursus
-gift;text;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest.;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest.;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste kado dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest.
+gift;text;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste cadeau dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest.;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste cadeau dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest.;We volgen graag samen de SDEN-3 wijncursus. Een bijdrage daarvoor is het mooiste cadeau dat je ons kunt geven. Je kunt die achterlaten in de cadeaubox bij de ingang van het feest.
 faq;1_q;Wat is de dresscode?;Wat is de dresscode?;Wat is de dresscode?
 faq;1_a;Zaterdag: sjiek-de-friemel. Vrijdag: iets minder sjiek-de-friemel.;Sjiek-de-friemel;Sjiek-de-friemel
 faq;2_q;Wat betekent iets minder sjiek-de-friemel?;Hoe zit het met dieetwensen?;Mag ik ook naar de ceremonie komen?
-faq;2_a;Iets minder sjiek-de-friemel betekent voor ons een feestelijke outfit die je op zaterdag nog kunt overtreffen.;Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:45 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor de receptie en het feest.
+faq;2_a;Iets minder sjiek-de-friemel betekent voor ons een feestelijke outfit die je op zaterdag nog kunt overtreffen.;Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Ja, dat zouden wij erg leuk vinden! Als je bij de ceremonie wil zijn, ben je vanaf 14:45 welkom op Landgoed Twistvliet. Na de ceremonie nemen we dan weer afscheid, en zien we je graag om 20:30 terug voor de receptie en het feest.
 faq;3_q;Waar slaap ik?;Hoe zit het met parkeren?;
 faq;3_a;Je slaapt in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig.;Er is voldoende gratis parkeerplek op het landgoed. Je auto kan de hele dag blijven staan.;
 faq;4_q;Hoe zit het met dieetwensen?;Wat als het regent?;Hoe zit het met dieetwensen?
-faq;4_a;Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om droog van je auto naar de binnenlocatie te lopen.;Geef je dieetwensen of allergieën door via het aanmeld-formulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.
+faq;4_a;Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om droog van je auto naar de binnenlocatie te lopen.;Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes.
 faq;5_q;Hoe zit het met parkeren?;Mag ik zelf opnames maken?;Hoe zit het met parkeren?
 faq;5_a;Er is voldoende gratis parkeerplek op het landgoed. Je auto kan het hele weekend blijven staan.;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-).";Er is voldoende gratis parkeerplek op het landgoed.
 faq;6_q;Wat als het regent?;;Wat als het regent?
-faq;6_a;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om droog van je huisje naar de binnenlocatie te lopen.;;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om van de parkeerplaats naar de ingang te lopen.
+faq;6_a;Alle hoofdmomenten (ontvangst, ceremonie, diner, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om droog van je huisje naar de binnenlocatie te lopen.;;Alle hoofdmomenten (ontvangst, ceremonie, feest) zijn binnen in de Kasteelzaal en Orangerie, dus regen is geen probleem. Neem voor de zekerheid een paraplu mee om van de parkeerplaats naar de ingang te lopen.
 faq;7_q;Mag ik zelf opnames maken?;;Mag ik zelf opnames maken?
 faq;7_a;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er op zaterdag een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)";;"Ja, dat mag. Als je die ook wil posten, overleg dit dan even met het bruidspaar. Daarnaast is er een foto- en videograaf aanwezig. Zij zorgen dat alles wordt opgenomen. Ook de ceremonie wordt volledig vastgelegd. Omdat hun camera beter is dan die van jou, vragen we je om je telefoon of camera niet te gebruiken tijdens de ceremonie. Geloof ons, jij wil niet die persoon zijn die met een telefoon in de hand op de video staat ;-)."
-faq;8_q;Wat is jullie kadotip?;Wat is jullie kadotip?;Wat is jullie kadotip?
+faq;8_q;Wat is jullie cadeautip?;Wat is jullie cadeautip?;Wat is jullie cadeautip?
 faq;8_a;Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>.;Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>.;Een bijdrage aan onze wijncursus is de mooiste gift. Zie ook <a href='#cadeau'>cadeau</a>.
 faq;9_q;Wie is de ceremoniemeester?;Wie is de ceremoniemeester?;Wie is de ceremoniemeester?
 faq;9_a;Onze ceremoniemeester is Priscilla Been. Zie ook <a href='#ceremoniemeester'>ceremoniemeester</a>.;Onze ceremoniemeester is Priscilla Been. Zie ook <a href='#ceremoniemeester'>ceremoniemeester</a>.;Onze ceremoniemeester is Priscilla Been. Zie ook <a href='#ceremoniemeester'>ceremoniemeester</a>.
