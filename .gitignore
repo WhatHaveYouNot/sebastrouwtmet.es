@@ -7,3 +7,6 @@ node_modules/
 
 # Lokale Claude Code-instellingen: machinegebonden, groeit per sessie aan
 .claude/settings.local.json
+
+# macOS Finder-metadata (vensterpositie, icoonindeling)
+.DS_Store
