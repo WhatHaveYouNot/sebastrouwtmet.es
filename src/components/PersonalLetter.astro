@@ -38,13 +38,9 @@ const body     = paragraphs.slice(1, -1); // drop opening and closing ("Met lief
     </p>
 
     <!-- Body paragraphs -->
-    <div
-      data-reveal
-      data-reveal-delay="2"
-      style="max-width:500px;margin:0 auto;font-weight:300;font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,0.8);"
-    >
+    <div data-reveal data-reveal-delay="2" class="letter-body">
       {body.map((para) => (
-        <p style="margin-bottom:0.75rem;">{para}</p>
+        <p>{para}</p>
       ))}
     </div>
 
@@ -55,9 +51,32 @@ const body     = paragraphs.slice(1, -1); // drop opening and closing ("Met lief
       class="font-display"
       style="margin-top:1rem;font-size:1.1rem;font-weight:400;color:rgba(255,255,255,0.85);line-height:1.6;"
     >
-      Lieve groet,<br />
+      Liefs,<br />
       <span style="font-weight:600;">Sebastiaan &amp; Esmeralda</span>
     </p>
 
   </div>
 </section>
+
+<style>
+  .letter-body {
+    max-width: 34rem;
+    margin: 0 auto;
+    text-wrap: pretty;
+    font-weight: 400;
+    font-size: clamp(1.0625rem, 0.98rem + 0.4vw, 1.125rem);
+    line-height: 1.72;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .letter-body p + p {
+    margin-top: 1.15em;
+  }
+
+  /* Op smalle schermen levert minder zijmarge een bruikbaardere regellengte op. */
+  @media (max-width: 480px) {
+    .letter-body {
+      margin-inline: -0.5rem;
+    }
+  }
+</style>

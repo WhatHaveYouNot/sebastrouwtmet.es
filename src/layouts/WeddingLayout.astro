@@ -124,10 +124,28 @@ const { title, variant } = Astro.props;
 
       const navSectionIds = ['brief', 'locatie', 'programma', 'rsvp', 'ceremoniemeester', 'faq', 'acts', 'cadeau'];
 
+      const navScroller = document.getElementById('nav-inner');
+
       function setNavActive(id: string) {
+        let active: HTMLAnchorElement | null = null;
+
         navLinks.forEach((link) => {
-          link.classList.toggle('nav-link--active', link.dataset.nav === id);
+          const isActive = link.dataset.nav === id;
+          link.classList.toggle('nav-link--active', isActive);
+          if (isActive) active = link;
         });
+
+        // Houd het actieve item in beeld; anders staat het bij de laatste
+        // secties afgekapt tegen de rand. scrollLeft laat de pagina zelf staan.
+        if (navScroller && active) {
+          const link = active as HTMLAnchorElement;
+          const target = link.offsetLeft - (navScroller.clientWidth - link.offsetWidth) / 2;
+          const max = navScroller.scrollWidth - navScroller.clientWidth;
+          navScroller.scrollTo({
+            left: Math.max(0, Math.min(target, max)),
+            behavior: 'smooth',
+          });
+        }
       }
 
       const navSectionObserver = new IntersectionObserver(
