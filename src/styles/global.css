@@ -70,6 +70,12 @@
     overflow-x: hidden;
   }
 
+  /* Ankersprongen vrijhouden van de vaste navigatiebalk (48px). Geldt ook voor
+     links die niet door de nav-klikhandler lopen, zoals die in FAQ-antwoorden. */
+  section[id] {
+    scroll-margin-top: 60px;
+  }
+
   /* Prevent long words/URLs breaking layout on mobile */
   p, span, a {
     overflow-wrap: break-word;
