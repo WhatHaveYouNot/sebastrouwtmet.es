@@ -107,9 +107,9 @@
           "label": "Zondag 1 november",
           "items": [
             {
-              "time": "09:00",
+              "time": "10:00",
               "title": "Gezamenlijk ontbijt & afscheid",
-              "detail": "Check voor het ontbijt uit en zet je spullen alvast in de auto."
+              "detail": "Check voor het ontbijt uit en zet je spullen alvast in de auto. Je mag de sleutel van het huisje in het slot laten zitten."
             }
           ]
         }
@@ -129,6 +129,10 @@
         {
           "question": "Wat is de dresscode?",
           "answer": "Zaterdag: sjiek-de-friemel. Vrijdag: iets minder sjiek-de-friemel."
+        },
+        {
+          "question": "Wat betekent sjiek-de-friemel?",
+          "answer": "Sjiek-de-friemel is geen kleurcode of strak voorschrift. Het staat voor de feestoutfit, waar jij je op je allermooist in voelt. Voor sommigen is dit van je dagelijkse spijkerbroek naar een pantalon met mooi overhemd, en voor anderen is dat van een pantalon naar een 3-delig pak."
         },
         {
           "question": "Wat betekent iets minder sjiek-de-friemel?",
@@ -165,6 +169,10 @@
         {
           "question": "Mag ik een act doen of speech houden?",
           "answer": "Tuurlijk! Zie voor meer informatie <a href='#acts'>speeches & acts</a>."
+        },
+        {
+          "question": "Wat moet ik doen om uit te checken?",
+          "answer": "Neem al je spullen mee en laat de sleutel in de deur zitten. We ontbijten om 10 uur in de Orangerie."
         }
       ]
     },
@@ -256,6 +264,10 @@
         {
           "question": "Wat is de dresscode?",
           "answer": "Sjiek-de-friemel"
+        },
+        {
+          "question": "Wat betekent sjiek-de-friemel?",
+          "answer": "Sjiek-de-friemel is geen kleurcode of strak voorschrift. Het staat voor de feestoutfit, waar jij je op je allermooist in voelt. Voor sommigen is dit van je dagelijkse spijkerbroek naar een pantalon met mooi overhemd, en voor anderen is dat van een pantalon naar een 3-delig pak."
         },
         {
           "question": "Hoe zit het met dieetwensen?",
@@ -365,6 +377,10 @@
         {
           "question": "Wat is de dresscode?",
           "answer": "Sjiek-de-friemel"
+        },
+        {
+          "question": "Wat betekent sjiek-de-friemel?",
+          "answer": "Sjiek-de-friemel is geen kleurcode of strak voorschrift. Het staat voor de feestoutfit, waar jij je op je allermooist in voelt. Voor sommigen is dit van je dagelijkse spijkerbroek naar een pantalon met mooi overhemd, en voor anderen is dat van een pantalon naar een 3-delig pak."
         },
         {
           "question": "Mag ik ook naar de ceremonie komen?",
