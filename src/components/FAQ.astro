@@ -9,6 +9,8 @@ interface Props {
 }
 
 const { items } = Astro.props;
+const VISIBLE_COUNT = 5;
+const hasMore = items.length > VISIBLE_COUNT;
 ---
 
 <section id="faq" class="section-padding bg-wedding-bg">
@@ -30,8 +32,14 @@ const { items } = Astro.props;
         {
           items.map((item, i) => {
             const delay = String(Math.min(i + 1, 5));
+            const isExtra = i >= VISIBLE_COUNT;
             return (
-              <div data-reveal data-reveal-delay={delay} class="faq-item px-6 py-5 md:px-8 md:py-6">
+              <div
+                data-reveal={isExtra ? undefined : ''}
+                data-reveal-delay={isExtra ? undefined : delay}
+                hidden={isExtra}
+                class:list={['faq-item px-6 py-5 md:px-8 md:py-6', isExtra && 'faq-extra']}
+              >
                 <button
                   class="faq-trigger w-full flex items-center justify-between gap-6 text-left group"
                   aria-expanded="false"
@@ -58,6 +66,18 @@ const { items } = Astro.props;
           })
         }
       </div>
+      {hasMore && (
+        <button
+          id="faq-more"
+          type="button"
+          class="faq-more w-full px-6 py-5 md:px-8 font-body text-xs uppercase tracking-[0.2em]"
+          aria-expanded="false"
+          data-label-more="Toon alle vragen"
+          data-label-less="Toon minder vragen"
+        >
+          Toon alle vragen
+        </button>
+      )}
     </div>
   </div>
 </section>
@@ -71,6 +91,18 @@ const { items } = Astro.props;
   }
   .faq-answer :global(a:hover) {
     color: #ffffff;
+  }
+
+  .faq-more {
+    color: #C4B998;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease;
+  }
+  .faq-more:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
   }
 </style>
 
@@ -98,5 +130,23 @@ const { items } = Astro.props;
         icon.style.transform = 'rotate(45deg)';
       }
     });
+  });
+
+  const moreBtn = document.getElementById('faq-more');
+
+  moreBtn?.addEventListener('click', () => {
+    const expand = moreBtn.getAttribute('aria-expanded') !== 'true';
+
+    document.querySelectorAll<HTMLElement>('.faq-extra').forEach((item) => {
+      item.hidden = !expand;
+    });
+
+    moreBtn.setAttribute('aria-expanded', String(expand));
+    moreBtn.textContent = (expand ? moreBtn.dataset.labelLess : moreBtn.dataset.labelMore) ?? '';
+
+    // Na inklappen staat de knop anders ver buiten beeld.
+    if (!expand) {
+      document.getElementById('faq')?.scrollIntoView({ block: 'start' });
+    }
   });
 </script>

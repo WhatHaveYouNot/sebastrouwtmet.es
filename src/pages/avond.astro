@@ -6,11 +6,11 @@ import SectionDivider from '../components/SectionDivider.astro';
 import LocationBlock from '../components/LocationBlock.astro';
 import ProgramTimeline from '../components/ProgramTimeline.astro';
 import CeremonyMaster from '../components/CeremonyMaster.astro';
-import RSVPButton from '../components/RSVPButton.astro';
+import VenueMap from '../components/VenueMap.astro';
 import FAQ from '../components/FAQ.astro';
 import Acts from '../components/Acts.astro';
 import GiftTip from '../components/GiftTip.astro';
-import StickyRSVP from '../components/StickyRSVP.astro';
+import SongRequest from '../components/SongRequest.astro';
 import data from '../data/wedding-data.json';
 
 const d = data.avond;
@@ -34,18 +34,23 @@ const countdownTarget = countdownFrom(d.program);
   <HeroHeader {...d.header} countdownTarget={countdownTarget} />
   <PersonalLetter text={d.letter.text} />
   <SectionDivider />
-  <LocationBlock {...d.location} />
+  <FAQ items={d.faq.items} />
   <SectionDivider />
   <ProgramTimeline days={d.program.days} />
   <SectionDivider />
-  <RSVPButton {...d.rsvp} />
+  {d.map.image && (
+    <>
+      <VenueMap {...d.map} />
+      <SectionDivider />
+    </>
+  )}
+  <SongRequest {...d.songrequest} />
   <SectionDivider />
   <CeremonyMaster {...d.mc} />
-  <SectionDivider />
-  <FAQ items={d.faq.items} />
   <SectionDivider />
   <Acts {...d.acts} />
   <SectionDivider />
   <GiftTip {...d.gift} />
-  <StickyRSVP {...d.rsvp} />
+  <SectionDivider />
+  <LocationBlock {...d.location} />
 </WeddingLayout>

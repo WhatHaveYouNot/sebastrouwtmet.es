@@ -1,13 +1,20 @@
 ---
+interface Props {
+  variant: 'weekend' | 'dag' | 'avond';
+}
+
+const { variant } = Astro.props;
+
 const navItems = [
   { label: 'Brief',       id: 'brief' },
-  { label: 'Locatie',     id: 'locatie' },
-  { label: 'Programma',   id: 'programma' },
-  { label: 'RSVP',        id: 'rsvp' },
-  { label: 'MC',          id: 'ceremoniemeester' },
   { label: 'FAQ',         id: 'faq' },
+  { label: 'Programma',   id: 'programma' },
+  ...(variant === 'weekend' ? [{ label: 'Plattegrond', id: 'plattegrond' }] : []),
+  { label: 'Verzoekje',   id: 'verzoekje' },
+  { label: 'MC',          id: 'ceremoniemeester' },
   { label: 'Acts',        id: 'acts' },
   { label: 'Cadeau',      id: 'cadeau' },
+  { label: 'Locatie',     id: 'locatie' },
 ];
 ---
 

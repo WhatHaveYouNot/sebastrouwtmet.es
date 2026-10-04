@@ -11,7 +11,7 @@ src/data/wedding-data.csv  →  scripts/csv-to-json.js  →  src/data/wedding-da
 ```
 - The CSV is the single source of truth. All content changes happen in the CSV.
 - Run `npm run data` to regenerate the JSON after editing the CSV.
-- The JSON structure: `{ weekend: { header, location, program, gift, faq, mc, rsvp }, dag: {...}, avond: {...} }`
+- The JSON structure: `{ weekend: { header, letter, location, program, acts, gift, faq, mc, songrequest, map }, dag: {...}, avond: {...} }`
 
 ### CSV format
 - Columns: `section, key, weekend, dag, avond`
@@ -27,7 +27,8 @@ All components live in `src/components/` and are shared across pages:
 - `GiftTip.astro` — Gift suggestion card
 - `FAQ.astro` — Accordion with client-side JS toggle
 - `CeremonyMaster.astro` — MC introduction with photo placeholder and email
-- `RSVPButton.astro` — CTA button linking to Notion form
+- `SongRequest.astro` — Card with button linking to the band's song request page
+- `VenueMap.astro` — Illustrated venue map with fullscreen zoom view; shows `map.preview` (cropped version) on the page and opens `map.image` (full map) on click; only rendered when `map.image` is filled in the CSV (weekend only)
 
 Each page (`src/pages/weekend.astro`, `dag.astro`, `avond.astro`) imports the JSON and passes the relevant subset to each component: `<HeroHeader {...d.header} />`
 
@@ -53,6 +54,9 @@ Refined editorial wedding style. Think modern luxury wedding stationery:
 - Cards with subtle shadows, rounded corners
 - Accent color badges for arrival times
 - Scroll indicator with pulsing animation in hero
+
+### Section order
+Hero → Brief → FAQ → Programma → Plattegrond (weekend only) → Verzoeknummer → Ceremoniemeester → Acts → Cadeau → Locatie. The RSVP phase is over: there is no RSVP block or sign-up link on the site anymore.
 
 ## Rules
 1. The 3 pages are standalone. They must NOT link to each other. There is NO navigation menu.
@@ -100,7 +104,8 @@ wedding-site/
     │   ├── GiftTip.astro
     │   ├── FAQ.astro
     │   ├── CeremonyMaster.astro
-    │   └── RSVPButton.astro
+    │   ├── SongRequest.astro
+    │   └── VenueMap.astro
     ├── styles/
     │   └── global.css
     └── pages/
