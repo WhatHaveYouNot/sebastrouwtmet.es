@@ -7,7 +7,7 @@
       "subtitle": ""
     },
     "letter": {
-      "text": "Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs.\n\nNu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jou te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder.\n\nDeze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We horen graag of je erbij kunt zijn. Op naar een fantastisch weekend!\n\nLiefs,"
+      "text": "Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs.\n\nNu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jou te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder.\n\nDeze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We kijken er enorm naar uit om dit met jou te vieren. Op naar een fantastisch weekend!\n\nLiefs,"
     },
     "location": {
       "venue_name": "Landgoed Twistvliet",
@@ -127,6 +127,14 @@
     "faq": {
       "items": [
         {
+          "question": "Wat als ik onverhoopt toch niet kan komen?",
+          "answer": "Dat vinden we jammer, maar laat het zo snel mogelijk weten aan ceremoniemeester Priscilla via <a href='mailto:pris.is.ceremoniemeester@gmail.com'>pris.is.ceremoniemeester@gmail.com</a>."
+        },
+        {
+          "question": "Kan ik een verzoeknummer aanvragen?",
+          "answer": "Ja! Zie <a href='#verzoekje'>verzoeknummer</a>."
+        },
+        {
           "question": "Wat is de dresscode?",
           "answer": "Zaterdag: sjiek-de-friemel. Vrijdag: iets minder sjiek-de-friemel."
         },
@@ -140,15 +148,15 @@
         },
         {
           "question": "Waar slaap ik?",
-          "answer": "Je slaapt in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig."
+          "answer": "Je slaapt in een van de huisjes op het landgoed. Handdoeken en beddengoed zijn aanwezig. Zie de <a href='#plattegrond'>plattegrond</a>."
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
+          "answer": "Dieetwensen en allergieën die je bij je aanmelding hebt doorgegeven zijn bekend bij Twistvliet. Is er iets veranderd? Mail dan ceremoniemeester Priscilla via <a href='mailto:pris.is.ceremoniemeester@gmail.com'>pris.is.ceremoniemeester@gmail.com</a>."
         },
         {
           "question": "Hoe zit het met parkeren?",
-          "answer": "Er is voldoende gratis parkeerplek op het landgoed. Je auto kan het hele weekend blijven staan."
+          "answer": "Er is voldoende gratis parkeerplek op het landgoed. Je auto kan het hele weekend blijven staan. Zie de <a href='#plattegrond'>plattegrond</a>."
         },
         {
           "question": "Wat als het regent?",
@@ -173,6 +181,10 @@
         {
           "question": "Wat moet ik doen om uit te checken?",
           "answer": "Neem al je spullen mee en laat de sleutel in de deur zitten. We ontbijten om 10 uur in de Orangerie."
+        },
+        {
+          "question": "Waar is de bruiloft?",
+          "answer": "Op Landgoed Twistvliet in Vrouwenpolder (Zeeland). Het adres en de routekaart vind je bij <a href='#locatie'>locatie</a>."
         }
       ]
     },
@@ -182,11 +194,17 @@
       "text": "Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van het weekend. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.",
       "email": "pris.is.ceremoniemeester@gmail.com"
     },
-    "rsvp": {
-      "text": "Laat ons zo snel mogelijk weten of jij er ook bij bent. Aanmelden kan via de knop hieronder.",
-      "button_text": "Aanmelden",
-      "deadline": "15 september",
-      "notion_url": "https://tally.so/r/1ANDZW"
+    "songrequest": {
+      "title": "Welk nummer wil jij horen?",
+      "text": "Geef door welk nummer jou gegarandeerd de dansvloer op krijgt, dan doen de band en de DJ hun best om het te spelen.",
+      "button_text": "Nummer aanvragen",
+      "url": "https://gigdashboard.atyourservice.band/verzoekje?gig=158"
+    },
+    "map": {
+      "title": "Plattegrond van het landgoed",
+      "image": "/images/plattegrond-twistvliet.webp",
+      "preview": "/images/plattegrond-twistvliet-preview.webp",
+      "image_alt": "Getekende plattegrond van Landgoed Twistvliet"
     }
   },
   "dag": {
@@ -197,7 +215,7 @@
       "subtitle": ""
     },
     "letter": {
-      "text": "Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs.\n\nNu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jou te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder.\n\nDeze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We horen graag of je erbij kunt zijn. Op naar een fantastische dag!\n\nLiefs,"
+      "text": "Lieve familie en vrienden,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs.\n\nNu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jou te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder.\n\nDeze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We kijken er enorm naar uit om dit met jou te vieren. Op naar een fantastische dag!\n\nLiefs,"
     },
     "location": {
       "venue_name": "Landgoed Twistvliet",
@@ -262,6 +280,14 @@
     "faq": {
       "items": [
         {
+          "question": "Wat als ik onverhoopt toch niet kan komen?",
+          "answer": "Dat vinden we jammer, maar laat het zo snel mogelijk weten aan ceremoniemeester Priscilla via <a href='mailto:pris.is.ceremoniemeester@gmail.com'>pris.is.ceremoniemeester@gmail.com</a>."
+        },
+        {
+          "question": "Kan ik een verzoeknummer aanvragen?",
+          "answer": "Ja! Zie <a href='#verzoekje'>verzoeknummer</a>."
+        },
+        {
           "question": "Wat is de dresscode?",
           "answer": "Sjiek-de-friemel"
         },
@@ -271,7 +297,7 @@
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
+          "answer": "Dieetwensen en allergieën die je bij je aanmelding hebt doorgegeven zijn bekend bij Twistvliet. Is er iets veranderd? Mail dan ceremoniemeester Priscilla via <a href='mailto:pris.is.ceremoniemeester@gmail.com'>pris.is.ceremoniemeester@gmail.com</a>."
         },
         {
           "question": "Hoe zit het met parkeren?",
@@ -296,6 +322,10 @@
         {
           "question": "Mag ik een act doen of speech houden?",
           "answer": "Tuurlijk! Zie voor meer informatie <a href='#acts'>speeches & acts</a>."
+        },
+        {
+          "question": "Waar is de bruiloft?",
+          "answer": "Op Landgoed Twistvliet in Vrouwenpolder (Zeeland). Het adres en de routekaart vind je bij <a href='#locatie'>locatie</a>."
         }
       ]
     },
@@ -305,11 +335,17 @@
       "text": "Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van de dag. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.",
       "email": "pris.is.ceremoniemeester@gmail.com"
     },
-    "rsvp": {
-      "text": "Laat ons zo snel mogelijk weten of jij er ook bij bent. Aanmelden kan via de knop hieronder.",
-      "button_text": "Aanmelden",
-      "deadline": "15 september",
-      "notion_url": "https://tally.so/r/Y5JJ4z"
+    "songrequest": {
+      "title": "Welk nummer wil jij horen?",
+      "text": "Geef door welk nummer jou gegarandeerd de dansvloer op krijgt, dan doen de band en de DJ hun best om het te spelen.",
+      "button_text": "Nummer aanvragen",
+      "url": "https://gigdashboard.atyourservice.band/verzoekje?gig=158"
+    },
+    "map": {
+      "title": "",
+      "image": "",
+      "preview": "",
+      "image_alt": ""
     }
   },
   "avond": {
@@ -320,7 +356,7 @@
       "subtitle": ""
     },
     "letter": {
-      "text": "Lieve allemaal,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs.\n\nNu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jou te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder.\n\nDeze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We horen graag of je erbij kunt zijn. Op naar een fantastische dag!\n\nLiefs,"
+      "text": "Lieve allemaal,\n\nMet natte sokken en heel veel spanning begon vorig jaar op 17 mei bovenop ons dak dit avontuur samen. We stapten hierna de auto in en gingen naar één van onze lievelingsplekken op aarde om onze verloving te vieren: Parijs.\n\nNu, meer dan een jaar later, komt onze bruiloft steeds dichterbij en verplaatsen we ons naar een andere belangrijke plek voor ons: Zeeland. We vinden het onwijs fijn en bijzonder om ons huwelijk op deze manier samen met jou te vieren. Op 31 oktober geven wij elkaar het ja-woord op Landgoed Twistvliet, in Vrouwenpolder.\n\nDeze keer hopelijk met minder natte sokken, maar waarschijnlijk evenveel spanning en enthousiasme. En dat eerste moet vast goed komen, want in Zeeland schijnt altijd de zon. We kijken er enorm naar uit om dit met jou te vieren. Op naar een fantastische dag!\n\nLiefs,"
     },
     "location": {
       "venue_name": "Landgoed Twistvliet",
@@ -375,6 +411,14 @@
     "faq": {
       "items": [
         {
+          "question": "Wat als ik onverhoopt toch niet kan komen?",
+          "answer": "Dat vinden we jammer, maar laat het zo snel mogelijk weten aan ceremoniemeester Priscilla via <a href='mailto:pris.is.ceremoniemeester@gmail.com'>pris.is.ceremoniemeester@gmail.com</a>."
+        },
+        {
+          "question": "Kan ik een verzoeknummer aanvragen?",
+          "answer": "Ja! Zie <a href='#verzoekje'>verzoeknummer</a>."
+        },
+        {
           "question": "Wat is de dresscode?",
           "answer": "Sjiek-de-friemel"
         },
@@ -388,7 +432,7 @@
         },
         {
           "question": "Hoe zit het met dieetwensen?",
-          "answer": "Geef je dieetwensen of allergieën door via het aanmeldformulier. Twistvliet houdt hier rekening mee bij alle maaltijden en tussendoortjes."
+          "answer": "Dieetwensen en allergieën die je bij je aanmelding hebt doorgegeven zijn bekend bij Twistvliet. Is er iets veranderd? Mail dan ceremoniemeester Priscilla via <a href='mailto:pris.is.ceremoniemeester@gmail.com'>pris.is.ceremoniemeester@gmail.com</a>."
         },
         {
           "question": "Hoe zit het met parkeren?",
@@ -413,6 +457,10 @@
         {
           "question": "Mag ik een act doen of speech houden?",
           "answer": "Tuurlijk! Zie voor meer informatie <a href='#acts'>speeches & acts</a>."
+        },
+        {
+          "question": "Waar is de bruiloft?",
+          "answer": "Op Landgoed Twistvliet in Vrouwenpolder (Zeeland). Het adres en de routekaart vind je bij <a href='#locatie'>locatie</a>."
         }
       ]
     },
@@ -422,11 +470,17 @@
       "text": "Priscilla is onze ceremoniemeester en verantwoordelijk voor het goede verloop van de dag. Mocht je hier op enige manier aan willen bijdragen, of extra vragen hebben dan kan Priscilla dit allemaal beantwoorden.",
       "email": "pris.is.ceremoniemeester@gmail.com"
     },
-    "rsvp": {
-      "text": "Laat ons zo snel mogelijk weten of jij er ook bij bent. Aanmelden kan via de knop hieronder.",
-      "button_text": "Aanmelden",
-      "deadline": "15 september",
-      "notion_url": "https://tally.so/r/D4xx7X"
+    "songrequest": {
+      "title": "Welk nummer wil jij horen?",
+      "text": "Geef door welk nummer jou gegarandeerd de dansvloer op krijgt, dan doen de band en de DJ hun best om het te spelen.",
+      "button_text": "Nummer aanvragen",
+      "url": "https://gigdashboard.atyourservice.band/verzoekje?gig=158"
+    },
+    "map": {
+      "title": "",
+      "image": "",
+      "preview": "",
+      "image_alt": ""
     }
   }
 }

@@ -98,7 +98,8 @@ for (const type of types) {
     gift: d.gift || {},
     faq: buildFaq(d.faq || {}),
     mc: d.mc || {},
-    rsvp: d.rsvp || {},
+    songrequest: d.songrequest || {},
+    map: d.map || {},
   };
 }
 
